@@ -1,0 +1,4 @@
+com.JHapps.eKool.SecurePreferences,/Users/dpradhan/Documents/research/firebugs-repair/bugdetectionrepair/runtime-security-bug-detector/pattern1-misuse-ecb/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java
+com.JHapps.eKool.SecurePreferencesException,/Users/dpradhan/Documents/research/firebugs-repair/bugdetectionrepair/runtime-security-bug-detector/pattern1-misuse-ecb/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java
+electronicCodeBook.EncryptStrong,/Users/dpradhan/Documents/research/firebugs-repair/bugdetectionrepair/runtime-security-bug-detector/pattern1-misuse-ecb/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java
+electronicCodeBook.NewEncryptWeak,/Users/dpradhan/Documents/research/firebugs-repair/bugdetectionrepair/runtime-security-bug-detector/pattern1-misuse-ecb/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java

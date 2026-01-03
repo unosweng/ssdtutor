@@ -1,0 +1,10 @@
+<rules>
+    <class index="1" className="javax.crypto.Cipher" message="Electronic Code Book"/>
+    <class index="2" className="java.security.MessageDigest" message="Hash Functions"/>
+    <class index="3" className="javax.crypto.spec.SecretKeySpec" message="Const Secret Key"/>
+    <class index="4" className="javax.crypto.spec.PBEParameterSpec" message="PBE Parameter Spec"/>
+    <class index="5" className="java.security.SecureRandom" message="Secure Random"/>
+    <class index="6" className="javax.crypto.KeyGenerator" message="Key Generator"/>
+    <class index="7" className="javax.crypto.SecretKeyFactory" message="SecretKey Factory"/>
+    <class index="8" className="javax.crypto.spec.IvParameterSpec" message="IVParameterSpec"/>
+</rules>

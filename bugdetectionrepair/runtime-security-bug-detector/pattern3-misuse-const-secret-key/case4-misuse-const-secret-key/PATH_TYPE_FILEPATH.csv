@@ -1,0 +1,2 @@
+constsecretkey.PwDatabaseV3,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case4-misuse-const-secret-key\src\constsecretkey\PwDatabaseV3.java
+constsecretkey.KeyUseWrong,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case4-misuse-const-secret-key\src\constsecretkey\KeyUseWrong.java

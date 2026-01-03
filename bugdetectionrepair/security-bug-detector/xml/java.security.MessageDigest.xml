@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-java-message-digest" class="java.security.MessageDigest">
+    <rule method="getInstance">
+        <argument index="1" name="algorithm">
+            <value string="MD2" security="weak"/>
+            <value string="MD5" security="weak"/>
+            <value string="SHA-1" security="weak"/>
+            <value string="SHA-256" security="strong"/>
+            <value string="SHA-384" security="strong"/>
+            <value string="SHA-512" security="strong"/>
+        </argument>
+        <argument index="2" name="provider" optional="True">
+            <value string="*" />
+            <value reference="r1-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="update">
+        <argument index="1" name="getBytes">
+            <value string="*" />
+        </argument>
+        <argument index="2" name="offset" optional="true">
+            <value int="*" />
+        </argument>
+        <argument index="3" name="len" optional="true">
+            <value int="*" />
+        </argument>
+    </rule>
+    <rule method="digest">
+        <noarguments></noarguments>
+        <argument index="1" name="nextBytes">
+            <value string="*" security="weak"/>
+            <value security="strong">
+                <value reference="r1-javax-secureRandom"/>
+                <value reference="r2-javax-secureRandom"/>
+                <value reference="r3-javax-secureRandom"/>
+            </value>
+        </argument>
+        <argument index="2" name="offset" optional="true">
+            <value int="*" />
+        </argument>
+        <argument index="3" name="length" optional="true">
+            <value int="*" />
+        </argument>
+    </rule>
+</rules>

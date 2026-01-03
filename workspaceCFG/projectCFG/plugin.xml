@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="projectcfg">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/projectCFG/css/default.css">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="projectCFG.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi"
+            apply="always">
+      </fragment>
+   </extension>
+
+</plugin>

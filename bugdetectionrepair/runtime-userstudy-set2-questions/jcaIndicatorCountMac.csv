@@ -1,0 +1,1355 @@
+Pattern, Group, Path, IndName, Args, Line
+1,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+1,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+1,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+1,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+1,,/package-question-1/src/org/package1/A.java,e.toString,,23
+1,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+1,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+1,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+1,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+1,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+1,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+1,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+1,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+1,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+1,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+1,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+1,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+1,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+1,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+1,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+1,,/package-question-10/src/org/package1/A.java,e.toString,,60
+1,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+1,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+1,,/package-question-10/src/org/package1/A.java,getBytes,,52
+1,,/package-question-10/src/org/package1/A.java,getBytes,,68
+1,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+1,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+1,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+1,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+1,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+1,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+1,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+1,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+1,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+1,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+1,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+1,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+1,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+1,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+1,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+1,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+1,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+1,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+1,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+1,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+1,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+1,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+1,,/package-question-10/src/org/package2/B.java,e.toString,,87
+1,,/package-question-10/src/org/package2/B.java,e.toString,,55
+1,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+1,,/package-question-10/src/org/package2/B.java,getBytes,,16
+1,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+1,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+1,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+1,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+1,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+1,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+1,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+1,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+1,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+1,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+1,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+1,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+1,,/package-question-10/src/org/package2/B.java,value.clone,,21
+1,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+1,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+1,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+1,,/package-question-2/src/org/package1/B.java,md.digest,,18
+1,,/package-question-2/src/org/package1/B.java,md.digest,,17
+1,,/package-question-2/src/org/package1/B.java,md.update,data,15
+1,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+1,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+1,,/package-question-3/src/org/package1/A.java,getBytes,,9
+1,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+1,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+1,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+1,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+1,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+1,,/package-question-3/src/org/package2/B.java,e.toString,,29
+1,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+1,,/package-question-3/src/org/package2/B.java,mb1,,22
+1,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+1,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+1,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+1,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+1,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+1,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+1,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+1,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+1,,/package-question-4/src/org/package1/A.java,e.toString,,24
+1,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+1,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+1,,/package-question-4/src/org/package1/A.java,ma3,,18
+1,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+1,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+1,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+1,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+1,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+1,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+1,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+1,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+1,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+1,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+1,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+1,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+1,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+1,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+1,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+1,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+1,,/package-question-5/src/org/package2/B.java,getBytes,,10
+1,,/package-question-5/src/org/package2/B.java,m2,seed,11
+1,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+1,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+1,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+1,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+1,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+1,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+1,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+1,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+1,,/package-question-6/src/org/package2/B.java,e.toString,,30
+1,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+1,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+1,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+1,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+1,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+1,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+1,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+1,,/package-question-7/src/org/package1/A.java,e.toString,,25
+1,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+1,,/package-question-7/src/org/package1/A.java,getBytes,,17
+1,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+1,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+1,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+1,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+1,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+1,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+1,,/package-question-8/src/org/package1/A.java,getBytes,,9
+1,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+1,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+1,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+1,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+1,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+1,,/package-question-8/src/org/package2/B.java,e.toString,,22
+1,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+1,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+1,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+1,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+1,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+1,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+1,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+1,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+1,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+1,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+1,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+1,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+1,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+1,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+1,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+1,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+1,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+1,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+1,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+1,,/package-question-9/src/org/package1/A.java,getBytes,,61
+1,,/package-question-9/src/org/package1/A.java,getBytes,,47
+1,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+1,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+1,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+1,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+1,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+1,,/package-question-9/src/org/package1/A.java,ma9,,88
+1,,/package-question-9/src/org/package1/A.java,ma9,,80
+1,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+1,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+1,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+1,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+1,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+1,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+1,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+1,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+1,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+1,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+1,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+1,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+1,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+1,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+1,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+1,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+1,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+1,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+1,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+1,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+1,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+1,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+1,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+1,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+1,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+1,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+1,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+1,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+1,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+1,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+1,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+1,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+1,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+1,,/package-question-9/src/org/package2/B.java,getBytes,,88
+1,,/package-question-9/src/org/package2/B.java,getLong,,91
+1,,/package-question-9/src/org/package2/B.java,getLong,,48
+1,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+1,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+1,,/package-question-9/src/org/package2/B.java,mb6,,73
+1,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+1,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+1,,/package-question-9/src/org/package2/B.java,md.digest,,67
+1,,/package-question-9/src/org/package2/B.java,md.digest,,69
+1,,/package-question-9/src/org/package2/B.java,md.update,data,64
+1,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+1,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+1,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+1,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+1,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+1,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+1,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+1,,/package-question-9/src/org/package2/B.java,varByte.clone,,102
+2,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+2,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+2,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+2,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+2,,/package-question-1/src/org/package1/A.java,e.toString,,23
+2,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+2,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+2,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+2,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+2,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+2,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+2,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+2,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+2,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+2,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+2,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+2,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+2,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+2,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+2,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+2,,/package-question-10/src/org/package1/A.java,e.toString,,60
+2,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+2,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+2,,/package-question-10/src/org/package1/A.java,getBytes,,52
+2,,/package-question-10/src/org/package1/A.java,getBytes,,68
+2,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+2,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+2,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+2,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+2,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+2,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+2,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+2,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+2,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+2,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+2,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+2,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+2,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+2,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+2,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+2,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+2,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+2,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+2,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+2,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+2,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+2,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+2,,/package-question-10/src/org/package2/B.java,e.toString,,55
+2,,/package-question-10/src/org/package2/B.java,e.toString,,87
+2,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+2,,/package-question-10/src/org/package2/B.java,getBytes,,16
+2,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+2,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+2,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+2,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+2,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+2,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+2,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+2,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+2,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+2,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+2,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+2,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+2,,/package-question-10/src/org/package2/B.java,value.clone,,21
+2,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+2,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+2,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+2,,/package-question-2/src/org/package1/B.java,md.digest,,18
+2,,/package-question-2/src/org/package1/B.java,md.digest,,17
+2,,/package-question-2/src/org/package1/B.java,md.update,data,15
+2,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+2,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+2,,/package-question-3/src/org/package1/A.java,getBytes,,9
+2,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+2,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+2,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+2,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+2,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+2,,/package-question-3/src/org/package2/B.java,e.toString,,29
+2,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+2,,/package-question-3/src/org/package2/B.java,mb1,,22
+2,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+2,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+2,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+2,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+2,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+2,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+2,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+2,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+2,,/package-question-4/src/org/package1/A.java,e.toString,,24
+2,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+2,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+2,,/package-question-4/src/org/package1/A.java,ma3,,18
+2,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+2,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+2,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+2,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+2,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+2,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+2,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+2,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+2,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+2,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+2,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+2,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+2,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+2,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+2,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+2,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+2,,/package-question-5/src/org/package2/B.java,getBytes,,10
+2,,/package-question-5/src/org/package2/B.java,m2,seed,11
+2,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+2,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+2,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+2,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+2,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+2,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+2,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+2,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+2,,/package-question-6/src/org/package2/B.java,e.toString,,30
+2,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+2,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+2,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+2,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+2,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+2,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+2,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+2,,/package-question-7/src/org/package1/A.java,e.toString,,25
+2,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+2,,/package-question-7/src/org/package1/A.java,getBytes,,17
+2,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+2,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+2,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+2,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+2,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+2,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+2,,/package-question-8/src/org/package1/A.java,getBytes,,9
+2,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+2,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+2,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+2,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+2,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+2,,/package-question-8/src/org/package2/B.java,e.toString,,22
+2,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+2,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+2,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+2,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+2,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+2,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+2,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+2,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+2,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+2,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+2,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+2,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+2,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+2,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+2,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+2,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+2,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+2,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+2,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+2,,/package-question-9/src/org/package1/A.java,getBytes,,47
+2,,/package-question-9/src/org/package1/A.java,getBytes,,61
+2,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+2,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+2,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+2,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+2,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+2,,/package-question-9/src/org/package1/A.java,ma9,,88
+2,,/package-question-9/src/org/package1/A.java,ma9,,80
+2,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+2,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+2,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+2,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+2,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+2,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+2,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+2,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+2,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+2,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+2,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+2,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+2,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+2,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+2,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+2,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+2,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+2,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+2,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+2,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+2,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+2,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+2,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+2,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+2,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+2,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+2,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+2,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+2,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+2,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+2,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+2,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+2,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+2,,/package-question-9/src/org/package2/B.java,getBytes,,88
+2,,/package-question-9/src/org/package2/B.java,getLong,,91
+2,,/package-question-9/src/org/package2/B.java,getLong,,48
+2,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+2,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+2,,/package-question-9/src/org/package2/B.java,mb6,,73
+2,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+2,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+2,,/package-question-9/src/org/package2/B.java,md.digest,,69
+2,,/package-question-9/src/org/package2/B.java,md.digest,,67
+2,,/package-question-9/src/org/package2/B.java,md.update,data,64
+2,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+2,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+2,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+2,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+2,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+2,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+2,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+2,,/package-question-9/src/org/package2/B.java,varByte.clone,,102
+3,,/package-question-1/src/org/package1/A.java,SecretKeySpec,key | "AES",18
+3,,/package-question-10/src/org/package2/B.java,SecretKeySpec,key | "AES",79
+3,,/package-question-3/src/org/package1/A.java,SecretKeySpec,secret | algorithm,15
+3,,/package-question-8/src/org/package2/B.java,SecretKeySpec,key | "AES",14
+3,,/package-question-9/src/org/package1/A.java,SecretKeySpec,key | "AES",31
+3,,/package-question-9/src/org/package1/A.java,SecretKeySpec,ma7(secret) | algorithm,67
+4,,/package-question-4/src/org/package2/B.java,PBEParameterSpec,SALT | count,16
+4,,/package-question-9/src/org/package2/B.java,PBEParameterSpec,mb9(pbeKey) | count,96
+5,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+5,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+5,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+5,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+5,,/package-question-1/src/org/package1/A.java,e.toString,,23
+5,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+5,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+5,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+5,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+5,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+5,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+5,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+5,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+5,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+5,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+5,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+5,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+5,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+5,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+5,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+5,,/package-question-10/src/org/package1/A.java,e.toString,,60
+5,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+5,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+5,,/package-question-10/src/org/package1/A.java,getBytes,,68
+5,,/package-question-10/src/org/package1/A.java,getBytes,,52
+5,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+5,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+5,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+5,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+5,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+5,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+5,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+5,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+5,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+5,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+5,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+5,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+5,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+5,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+5,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+5,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+5,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+5,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+5,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+5,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+5,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+5,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+5,,/package-question-10/src/org/package2/B.java,e.toString,,87
+5,,/package-question-10/src/org/package2/B.java,e.toString,,55
+5,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+5,,/package-question-10/src/org/package2/B.java,getBytes,,16
+5,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+5,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+5,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+5,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+5,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+5,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+5,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+5,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+5,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+5,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+5,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+5,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+5,,/package-question-10/src/org/package2/B.java,value.clone,,21
+5,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+5,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+5,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+5,,/package-question-2/src/org/package1/B.java,md.digest,,17
+5,,/package-question-2/src/org/package1/B.java,md.digest,,18
+5,,/package-question-2/src/org/package1/B.java,md.update,data,15
+5,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+5,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+5,,/package-question-3/src/org/package1/A.java,getBytes,,9
+5,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+5,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+5,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+5,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+5,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+5,,/package-question-3/src/org/package2/B.java,e.toString,,29
+5,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+5,,/package-question-3/src/org/package2/B.java,mb1,,22
+5,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+5,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+5,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+5,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+5,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+5,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+5,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+5,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+5,,/package-question-4/src/org/package1/A.java,e.toString,,24
+5,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+5,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+5,,/package-question-4/src/org/package1/A.java,ma3,,18
+5,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+5,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+5,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+5,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+5,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+5,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+5,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+5,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+5,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+5,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+5,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+5,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+5,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+5,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+5,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+5,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+5,,/package-question-5/src/org/package2/B.java,getBytes,,10
+5,,/package-question-5/src/org/package2/B.java,m2,seed,11
+5,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+5,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+5,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+5,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+5,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+5,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+5,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+5,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+5,,/package-question-6/src/org/package2/B.java,e.toString,,30
+5,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+5,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+5,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+5,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+5,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+5,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+5,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+5,,/package-question-7/src/org/package1/A.java,e.toString,,25
+5,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+5,,/package-question-7/src/org/package1/A.java,getBytes,,17
+5,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+5,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+5,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+5,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+5,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+5,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+5,,/package-question-8/src/org/package1/A.java,getBytes,,9
+5,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+5,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+5,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+5,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+5,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+5,,/package-question-8/src/org/package2/B.java,e.toString,,22
+5,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+5,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+5,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+5,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+5,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+5,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+5,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+5,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+5,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+5,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+5,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+5,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+5,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+5,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+5,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+5,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+5,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+5,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+5,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+5,,/package-question-9/src/org/package1/A.java,getBytes,,47
+5,,/package-question-9/src/org/package1/A.java,getBytes,,61
+5,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+5,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+5,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+5,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+5,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+5,,/package-question-9/src/org/package1/A.java,ma9,,88
+5,,/package-question-9/src/org/package1/A.java,ma9,,80
+5,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+5,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+5,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+5,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+5,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+5,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+5,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+5,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+5,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+5,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+5,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+5,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+5,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+5,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+5,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+5,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+5,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+5,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+5,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+5,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+5,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+5,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+5,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+5,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+5,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+5,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+5,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+5,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+5,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+5,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+5,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+5,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+5,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+5,,/package-question-9/src/org/package2/B.java,getBytes,,88
+5,,/package-question-9/src/org/package2/B.java,getLong,,48
+5,,/package-question-9/src/org/package2/B.java,getLong,,91
+5,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+5,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+5,,/package-question-9/src/org/package2/B.java,mb6,,73
+5,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+5,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+5,,/package-question-9/src/org/package2/B.java,md.digest,,69
+5,,/package-question-9/src/org/package2/B.java,md.digest,,67
+5,,/package-question-9/src/org/package2/B.java,md.update,data,64
+5,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+5,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+5,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+5,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+5,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+5,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+5,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+5,,/package-question-9/src/org/package2/B.java,varByte.clone,,102
+6,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+6,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+6,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+6,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+6,,/package-question-1/src/org/package1/A.java,e.toString,,23
+6,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+6,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+6,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+6,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+6,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+6,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+6,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+6,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+6,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+6,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+6,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+6,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+6,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+6,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+6,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+6,,/package-question-10/src/org/package1/A.java,e.toString,,60
+6,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+6,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+6,,/package-question-10/src/org/package1/A.java,getBytes,,52
+6,,/package-question-10/src/org/package1/A.java,getBytes,,68
+6,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+6,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+6,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+6,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+6,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+6,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+6,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+6,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+6,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+6,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+6,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+6,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+6,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+6,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+6,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+6,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+6,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+6,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+6,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+6,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+6,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+6,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+6,,/package-question-10/src/org/package2/B.java,e.toString,,55
+6,,/package-question-10/src/org/package2/B.java,e.toString,,87
+6,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+6,,/package-question-10/src/org/package2/B.java,getBytes,,16
+6,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+6,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+6,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+6,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+6,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+6,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+6,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+6,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+6,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+6,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+6,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+6,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+6,,/package-question-10/src/org/package2/B.java,value.clone,,21
+6,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+6,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+6,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+6,,/package-question-2/src/org/package1/B.java,md.digest,,17
+6,,/package-question-2/src/org/package1/B.java,md.digest,,18
+6,,/package-question-2/src/org/package1/B.java,md.update,data,15
+6,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+6,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+6,,/package-question-3/src/org/package1/A.java,getBytes,,9
+6,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+6,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+6,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+6,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+6,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+6,,/package-question-3/src/org/package2/B.java,e.toString,,29
+6,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+6,,/package-question-3/src/org/package2/B.java,mb1,,22
+6,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+6,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+6,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+6,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+6,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+6,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+6,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+6,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+6,,/package-question-4/src/org/package1/A.java,e.toString,,24
+6,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+6,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+6,,/package-question-4/src/org/package1/A.java,ma3,,18
+6,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+6,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+6,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+6,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+6,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+6,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+6,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+6,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+6,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+6,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+6,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+6,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+6,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+6,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+6,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+6,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+6,,/package-question-5/src/org/package2/B.java,getBytes,,10
+6,,/package-question-5/src/org/package2/B.java,m2,seed,11
+6,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+6,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+6,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+6,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+6,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+6,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+6,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+6,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+6,,/package-question-6/src/org/package2/B.java,e.toString,,30
+6,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+6,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+6,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+6,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+6,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+6,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+6,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+6,,/package-question-7/src/org/package1/A.java,e.toString,,25
+6,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+6,,/package-question-7/src/org/package1/A.java,getBytes,,17
+6,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+6,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+6,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+6,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+6,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+6,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+6,,/package-question-8/src/org/package1/A.java,getBytes,,9
+6,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+6,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+6,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+6,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+6,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+6,,/package-question-8/src/org/package2/B.java,e.toString,,22
+6,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+6,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+6,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+6,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+6,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+6,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+6,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+6,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+6,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+6,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+6,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+6,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+6,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+6,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+6,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+6,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+6,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+6,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+6,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+6,,/package-question-9/src/org/package1/A.java,getBytes,,47
+6,,/package-question-9/src/org/package1/A.java,getBytes,,61
+6,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+6,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+6,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+6,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+6,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+6,,/package-question-9/src/org/package1/A.java,ma9,,80
+6,,/package-question-9/src/org/package1/A.java,ma9,,88
+6,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+6,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+6,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+6,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+6,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+6,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+6,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+6,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+6,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+6,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+6,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+6,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+6,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+6,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+6,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+6,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+6,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+6,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+6,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+6,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+6,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+6,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+6,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+6,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+6,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+6,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+6,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+6,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+6,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+6,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+6,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+6,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+6,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+6,,/package-question-9/src/org/package2/B.java,getBytes,,88
+6,,/package-question-9/src/org/package2/B.java,getLong,,48
+6,,/package-question-9/src/org/package2/B.java,getLong,,91
+6,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+6,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+6,,/package-question-9/src/org/package2/B.java,mb6,,73
+6,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+6,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+6,,/package-question-9/src/org/package2/B.java,md.digest,,69
+6,,/package-question-9/src/org/package2/B.java,md.digest,,67
+6,,/package-question-9/src/org/package2/B.java,md.update,data,64
+6,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+6,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+6,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+6,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+6,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+6,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+6,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+6,,/package-question-9/src/org/package2/B.java,varByte.clone,,102
+7,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+7,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+7,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+7,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+7,,/package-question-1/src/org/package1/A.java,e.toString,,23
+7,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+7,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+7,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+7,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+7,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+7,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+7,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+7,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+7,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+7,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+7,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+7,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+7,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+7,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+7,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+7,,/package-question-10/src/org/package1/A.java,e.toString,,60
+7,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+7,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+7,,/package-question-10/src/org/package1/A.java,getBytes,,68
+7,,/package-question-10/src/org/package1/A.java,getBytes,,52
+7,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+7,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+7,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+7,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+7,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+7,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+7,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+7,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+7,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+7,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+7,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+7,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+7,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+7,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+7,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+7,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+7,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+7,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+7,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+7,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+7,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+7,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+7,,/package-question-10/src/org/package2/B.java,e.toString,,87
+7,,/package-question-10/src/org/package2/B.java,e.toString,,55
+7,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+7,,/package-question-10/src/org/package2/B.java,getBytes,,16
+7,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+7,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+7,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+7,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+7,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+7,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+7,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+7,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+7,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+7,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+7,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+7,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+7,,/package-question-10/src/org/package2/B.java,value.clone,,21
+7,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+7,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+7,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+7,,/package-question-2/src/org/package1/B.java,md.digest,,17
+7,,/package-question-2/src/org/package1/B.java,md.digest,,18
+7,,/package-question-2/src/org/package1/B.java,md.update,data,15
+7,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+7,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+7,,/package-question-3/src/org/package1/A.java,getBytes,,9
+7,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+7,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+7,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+7,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+7,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+7,,/package-question-3/src/org/package2/B.java,e.toString,,29
+7,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+7,,/package-question-3/src/org/package2/B.java,mb1,,22
+7,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+7,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+7,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+7,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+7,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+7,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+7,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+7,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+7,,/package-question-4/src/org/package1/A.java,e.toString,,24
+7,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+7,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+7,,/package-question-4/src/org/package1/A.java,ma3,,18
+7,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+7,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+7,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+7,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+7,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+7,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+7,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+7,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+7,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+7,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+7,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+7,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+7,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+7,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+7,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+7,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+7,,/package-question-5/src/org/package2/B.java,getBytes,,10
+7,,/package-question-5/src/org/package2/B.java,m2,seed,11
+7,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+7,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+7,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+7,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+7,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+7,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+7,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+7,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+7,,/package-question-6/src/org/package2/B.java,e.toString,,30
+7,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+7,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+7,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+7,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+7,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+7,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+7,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+7,,/package-question-7/src/org/package1/A.java,e.toString,,25
+7,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+7,,/package-question-7/src/org/package1/A.java,getBytes,,17
+7,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+7,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+7,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+7,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+7,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+7,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+7,,/package-question-8/src/org/package1/A.java,getBytes,,9
+7,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+7,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+7,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+7,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+7,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+7,,/package-question-8/src/org/package2/B.java,e.toString,,22
+7,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+7,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+7,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+7,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+7,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+7,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+7,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+7,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+7,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+7,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+7,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+7,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+7,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+7,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+7,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+7,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+7,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+7,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+7,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+7,,/package-question-9/src/org/package1/A.java,getBytes,,61
+7,,/package-question-9/src/org/package1/A.java,getBytes,,47
+7,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+7,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+7,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+7,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+7,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+7,,/package-question-9/src/org/package1/A.java,ma9,,80
+7,,/package-question-9/src/org/package1/A.java,ma9,,88
+7,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+7,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+7,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+7,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+7,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+7,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+7,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+7,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+7,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+7,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+7,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+7,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+7,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+7,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+7,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+7,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+7,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+7,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+7,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+7,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+7,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+7,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+7,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+7,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+7,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+7,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+7,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+7,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+7,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+7,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+7,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+7,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+7,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+7,,/package-question-9/src/org/package2/B.java,getBytes,,88
+7,,/package-question-9/src/org/package2/B.java,getLong,,91
+7,,/package-question-9/src/org/package2/B.java,getLong,,48
+7,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+7,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+7,,/package-question-9/src/org/package2/B.java,mb6,,73
+7,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+7,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+7,,/package-question-9/src/org/package2/B.java,md.digest,,69
+7,,/package-question-9/src/org/package2/B.java,md.digest,,67
+7,,/package-question-9/src/org/package2/B.java,md.update,data,64
+7,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+7,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+7,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+7,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+7,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+7,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+7,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+7,,/package-question-9/src/org/package2/B.java,varByte.clone,,102
+8,,/package-question-1/src/org/package1/A.java,Base64.getEncoder,,21
+8,,/package-question-1/src/org/package1/A.java,Cipher.getInstance,algorithm,19
+8,,/package-question-1/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),21
+8,,/package-question-1/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,20
+8,,/package-question-1/src/org/package1/A.java,e.toString,,23
+8,,/package-question-1/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),21
+8,,/package-question-1/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,12
+8,,/package-question-1/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),23
+8,,/package-question-1/src/org/package1/A.java,secret.getBytes,"UTF-8",17
+8,,/package-question-1/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",21
+8,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,58
+8,,/package-question-10/src/org/package1/A.java,Base64.getEncoder,,28
+8,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,24
+8,,/package-question-10/src/org/package1/A.java,Cipher.getInstance,algorithm,55
+8,,/package-question-10/src/org/package1/A.java,IvParameterSpec,iv,73
+8,,/package-question-10/src/org/package1/A.java,KeyGenerator.getInstance,"AES",20
+8,,/package-question-10/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,51
+8,,/package-question-10/src/org/package1/A.java,b.mb4,algorithm | "Encryptthis",40
+8,,/package-question-10/src/org/package1/A.java,b.mb7,"encrypt" | ivSpec,75
+8,,/package-question-10/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),27
+8,,/package-question-10/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,26
+8,,/package-question-10/src/org/package1/A.java,e.toString,,60
+8,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,58
+8,,/package-question-10/src/org/package1/A.java,encodeToString,ciphertext,28
+8,,/package-question-10/src/org/package1/A.java,getBytes,,52
+8,,/package-question-10/src/org/package1/A.java,getBytes,,68
+8,,/package-question-10/src/org/package1/A.java,keyFactory.generateSecret,spec,54
+8,,/package-question-10/src/org/package1/A.java,keyGen.generateKey,,22
+8,,/package-question-10/src/org/package1/A.java,keyGen.init,256,21
+8,,/package-question-10/src/org/package1/A.java,ma3,algo,35
+8,,/package-question-10/src/org/package1/A.java,ma6,initVec,69
+8,,/package-question-10/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),57
+8,,/package-question-10/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,56
+8,,/package-question-10/src/org/package1/A.java,plaintext.getBytes,,27
+8,,/package-question-10/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),60
+8,,/package-question-10/src/org/package1/A.java,strToEncrypt.getBytes,,57
+8,,/package-question-10/src/org/package2/B.java,Base64.getDecoder,,53
+8,,/package-question-10/src/org/package2/B.java,Base64.getEncoder,,85
+8,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,81
+8,,/package-question-10/src/org/package2/B.java,Cipher.getInstance,algorithm,51
+8,,/package-question-10/src/org/package2/B.java,IvParameterSpec,iv,33
+8,,/package-question-10/src/org/package2/B.java,IvParameterSpec,iv,49
+8,,/package-question-10/src/org/package2/B.java,KeyGenerator.getInstance,algo,42
+8,,/package-question-10/src/org/package2/B.java,a.ma1,new IvParameterSpec(iv),33
+8,,/package-question-10/src/org/package2/B.java,a.ma4,algorithm,69
+8,,/package-question-10/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),53
+8,,/package-question-10/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),84
+8,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,52
+8,,/package-question-10/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,83
+8,,/package-question-10/src/org/package2/B.java,decode,strTom5,53
+8,,/package-question-10/src/org/package2/B.java,e.toString,,87
+8,,/package-question-10/src/org/package2/B.java,e.toString,,55
+8,,/package-question-10/src/org/package2/B.java,encodeToString,ciphertext,85
+8,,/package-question-10/src/org/package2/B.java,getBytes,,16
+8,,/package-question-10/src/org/package2/B.java,keyGenerator.generateKey,,44
+8,,/package-question-10/src/org/package2/B.java,keyGenerator.init,256,43
+8,,/package-question-10/src/org/package2/B.java,mb2,"!2345".getBytes(),16
+8,,/package-question-10/src/org/package2/B.java,mb3,seed,17
+8,,/package-question-10/src/org/package2/B.java,mb6,algo,64
+8,,/package-question-10/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),87
+8,,/package-question-10/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),55
+8,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,31
+8,,/package-question-10/src/org/package2/B.java,random.nextBytes,iv,48
+8,,/package-question-10/src/org/package2/B.java,random.setSeed,seed,30
+8,,/package-question-10/src/org/package2/B.java,secureRandom.nextBytes,valuecloned,23
+8,,/package-question-10/src/org/package2/B.java,strToEncrypt.getBytes,,84
+8,,/package-question-10/src/org/package2/B.java,value.clone,,21
+8,,/package-question-2/src/org/package1/B.java,MessageDigest.getInstance,algorithm,14
+8,,/package-question-2/src/org/package1/B.java,e.printStackTrace,,20
+8,,/package-question-2/src/org/package1/B.java,hashTemplate,data | algorithm | false,9
+8,,/package-question-2/src/org/package1/B.java,md.digest,,17
+8,,/package-question-2/src/org/package1/B.java,md.digest,,18
+8,,/package-question-2/src/org/package1/B.java,md.update,data,15
+8,,/package-question-2/src/org/package1/B.java,println,md.digest(),17
+8,,/package-question-3/src/org/package1/A.java,b.mb2,sSpec | "encryptthis",17
+8,,/package-question-3/src/org/package1/A.java,getBytes,,9
+8,,/package-question-3/src/org/package1/A.java,ma2,secret | algorithm,11
+8,,/package-question-3/src/org/package2/B.java,Base64.getEncoder,,27
+8,,/package-question-3/src/org/package2/B.java,Cipher.getInstance,algorithm,23
+8,,/package-question-3/src/org/package2/B.java,IvParameterSpec,iv,17
+8,,/package-question-3/src/org/package2/B.java,cipher.doFinal,strTom5.getBytes(),26
+8,,/package-question-3/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,25
+8,,/package-question-3/src/org/package2/B.java,e.toString,,29
+8,,/package-question-3/src/org/package2/B.java,encodeToString,ciphertext,27
+8,,/package-question-3/src/org/package2/B.java,mb1,,22
+8,,/package-question-3/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),29
+8,,/package-question-3/src/org/package2/B.java,random.nextBytes,iv,16
+8,,/package-question-3/src/org/package2/B.java,strTom5.getBytes,,26
+8,,/package-question-4/src/org/package1/A.java,Base64.getEncoder,,22
+8,,/package-question-4/src/org/package1/A.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",19
+8,,/package-question-4/src/org/package1/A.java,SecretKeyFactory.getInstance,"PBEWithMD5AndDES",32
+8,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,38
+8,,/package-question-4/src/org/package1/A.java,e.printStackTrace,,36
+8,,/package-question-4/src/org/package1/A.java,e.toString,,24
+8,,/package-question-4/src/org/package1/A.java,encodeToString,ciphertext,22
+8,,/package-question-4/src/org/package1/A.java,keyFactory.generateSecret,pbe,33
+8,,/package-question-4/src/org/package1/A.java,ma3,,18
+8,,/package-question-4/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),21
+8,,/package-question-4/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,20
+8,,/package-question-4/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),24
+8,,/package-question-4/src/org/package1/A.java,strToEncrypt.getBytes,,21
+8,,/package-question-4/src/org/package1/A.java,toCharArray,,31
+8,,/package-question-4/src/org/package2/B.java,a.ma1,"encrypt" | pbKey,18
+8,,/package-question-5/src/org/package1/A.java,Base64.getEncoder,,24
+8,,/package-question-5/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+8,,/package-question-5/src/org/package1/A.java,KeyGenerator.getInstance,"AES",16
+8,,/package-question-5/src/org/package1/A.java,cipher.doFinal,plaintext.getBytes(),23
+8,,/package-question-5/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | keyGenerator | ivSpec,22
+8,,/package-question-5/src/org/package1/A.java,encodeToString,ciphertext,24
+8,,/package-question-5/src/org/package1/A.java,keyGen.generateKey,,18
+8,,/package-question-5/src/org/package1/A.java,keyGen.init,256,17
+8,,/package-question-5/src/org/package1/A.java,plaintext.getBytes,,23
+8,,/package-question-5/src/org/package2/B.java,IvParameterSpec,iv,20
+8,,/package-question-5/src/org/package2/B.java,a.m1,new IvParameterSpec(iv),20
+8,,/package-question-5/src/org/package2/B.java,getBytes,,10
+8,,/package-question-5/src/org/package2/B.java,m2,seed,11
+8,,/package-question-5/src/org/package2/B.java,random.nextBytes,iv,18
+8,,/package-question-5/src/org/package2/B.java,random.setSeed,seed,17
+8,,/package-question-6/src/org/package2/B.java,Base64.getDecoder,,27
+8,,/package-question-6/src/org/package2/B.java,Cipher.getInstance,algorithm,25
+8,,/package-question-6/src/org/package2/B.java,IvParameterSpec,iv,23
+8,,/package-question-6/src/org/package2/B.java,KeyGenerator.getInstance,algo,16
+8,,/package-question-6/src/org/package2/B.java,cipher.doFinal,Base64.getDecoder().decode(strTom5),27
+8,,/package-question-6/src/org/package2/B.java,cipher.init,Cipher.DECRYPT_MODE | secretKey | ivSpec,26
+8,,/package-question-6/src/org/package2/B.java,decode,strTom5,27
+8,,/package-question-6/src/org/package2/B.java,e.toString,,30
+8,,/package-question-6/src/org/package2/B.java,keyGenerator.generateKey,,18
+8,,/package-question-6/src/org/package2/B.java,keyGenerator.init,256,17
+8,,/package-question-6/src/org/package2/B.java,println,"Error while m5ing: " + e.toString(),30
+8,,/package-question-6/src/org/package2/B.java,random.nextBytes,iv,22
+8,,/package-question-7/src/org/package1/A.java,Base64.getEncoder,,23
+8,,/package-question-7/src/org/package1/A.java,Cipher.getInstance,algorithm,20
+8,,/package-question-7/src/org/package1/A.java,SecretKeyFactory.getInstance,algo,16
+8,,/package-question-7/src/org/package1/A.java,e.toString,,25
+8,,/package-question-7/src/org/package1/A.java,encodeToString,ciphertext,23
+8,,/package-question-7/src/org/package1/A.java,getBytes,,17
+8,,/package-question-7/src/org/package1/A.java,keyFactory.generateSecret,spec,19
+8,,/package-question-7/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),22
+8,,/package-question-7/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key,21
+8,,/package-question-7/src/org/package1/A.java,println,"Error while encrypting: " + e.toString(),25
+8,,/package-question-7/src/org/package1/A.java,strToEncrypt.getBytes,,22
+8,,/package-question-8/src/org/package1/A.java,IvParameterSpec,iv,14
+8,,/package-question-8/src/org/package1/A.java,b.m1,"encrypt" | ivSpec,16
+8,,/package-question-8/src/org/package1/A.java,getBytes,,9
+8,,/package-question-8/src/org/package1/A.java,m2,initVec,10
+8,,/package-question-8/src/org/package2/B.java,Base64.getEncoder,,20
+8,,/package-question-8/src/org/package2/B.java,Cipher.getInstance,algorithm,16
+8,,/package-question-8/src/org/package2/B.java,cipher.doFinal,strToEncrypt.getBytes(),19
+8,,/package-question-8/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey | ivSpec,18
+8,,/package-question-8/src/org/package2/B.java,e.toString,,22
+8,,/package-question-8/src/org/package2/B.java,encodeToString,ciphertext,20
+8,,/package-question-8/src/org/package2/B.java,println,"Error while encrypting: " + e.toString(),22
+8,,/package-question-8/src/org/package2/B.java,strToEncrypt.getBytes,,19
+8,,/package-question-9/src/org/package1/A.java,B.mb3,data | algorithm,57
+8,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,34
+8,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,84
+8,,/package-question-9/src/org/package1/A.java,Base64.getEncoder,,95
+8,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",92
+8,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,"PBEWithMD5AndDES",81
+8,,/package-question-9/src/org/package1/A.java,Cipher.getInstance,algorithm,32
+8,,/package-question-9/src/org/package1/A.java,SecretKeyFactory.getInstance,"RSA/ECB/PKCS1Padding",100
+8,,/package-question-9/src/org/package1/A.java,VAR1.clone,,73
+8,,/package-question-9/src/org/package1/A.java,algorithm.isEmpty,,55
+8,,/package-question-9/src/org/package1/A.java,b.mb5,keySpec | "encryptthis",69
+8,,/package-question-9/src/org/package1/A.java,cipher.doFinal,strToEncrypt.getBytes("UTF-8"),34
+8,,/package-question-9/src/org/package1/A.java,cipher.init,Cipher.ENCRYPT_MODE | secretKey,33
+8,,/package-question-9/src/org/package1/A.java,encodeToString,cipher.doFinal(strToEncrypt.getBytes("UTF-8")),34
+8,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,95
+8,,/package-question-9/src/org/package1/A.java,encodeToString,ciphertext,84
+8,,/package-question-9/src/org/package1/A.java,getBytes,,47
+8,,/package-question-9/src/org/package1/A.java,getBytes,,61
+8,,/package-question-9/src/org/package1/A.java,keyFactory.generateSecret,pbe,101
+8,,/package-question-9/src/org/package1/A.java,ma2,algorithm | strToEncrypt | secret,26
+8,,/package-question-9/src/org/package1/A.java,ma4,data | algorithm,49
+8,,/package-question-9/src/org/package1/A.java,ma6,secret | algorithm,63
+8,,/package-question-9/src/org/package1/A.java,ma7,secret,67
+8,,/package-question-9/src/org/package1/A.java,ma9,,88
+8,,/package-question-9/src/org/package1/A.java,ma9,,80
+8,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),94
+8,,/package-question-9/src/org/package1/A.java,pbeCipher.doFinal,strToEncrypt.getBytes(),83
+8,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,93
+8,,/package-question-9/src/org/package1/A.java,pbeCipher.init,Cipher.ENCRYPT_MODE | key | pbeKey,82
+8,,/package-question-9/src/org/package1/A.java,random.nextBytes,bytes,91
+8,,/package-question-9/src/org/package1/A.java,secret.getBytes,"UTF-8",30
+8,,/package-question-9/src/org/package1/A.java,secureRandom.nextBytes,VAR2,75
+8,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,83
+8,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,,94
+8,,/package-question-9/src/org/package1/A.java,strToEncrypt.getBytes,"UTF-8",34
+8,,/package-question-9/src/org/package1/A.java,toCharArray,,99
+8,,/package-question-9/src/org/package2/B.java,Arrays.toString,SALT,28
+8,,/package-question-9/src/org/package2/B.java,Arrays.toString,pbeKey,89
+8,,/package-question-9/src/org/package2/B.java,Arrays.toString,value,46
+8,,/package-question-9/src/org/package2/B.java,Base64.getDecoder,,30
+8,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,90
+8,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,47
+8,,/package-question-9/src/org/package2/B.java,Base64.getEncoder,,77
+8,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,pbeKey,91
+8,,/package-question-9/src/org/package2/B.java,ByteBuffer.wrap,value,48
+8,,/package-question-9/src/org/package2/B.java,Charset.forName,CHARSET,41
+8,,/package-question-9/src/org/package2/B.java,Cipher.getInstance,"PBEWithMD5AndDES",74
+8,,/package-question-9/src/org/package2/B.java,IvParameterSpec,iv,84
+8,,/package-question-9/src/org/package2/B.java,MessageDigest.getInstance,"SHA-1",63
+8,,/package-question-9/src/org/package2/B.java,PLAIN_TEXT.getBytes,(Charset.forName(CHARSET)),41
+8,,/package-question-9/src/org/package2/B.java,a.ma1,algorithm,51
+8,,/package-question-9/src/org/package2/B.java,a.ma8,"encrypt" | pbKey,98
+8,,/package-question-9/src/org/package2/B.java,auth.indexOf,':',32
+8,,/package-question-9/src/org/package2/B.java,cipher.doFinal,str.getBytes(),76
+8,,/package-question-9/src/org/package2/B.java,cipher.init,Cipher.ENCRYPT_MODE | keySpec | ivSpec,75
+8,,/package-question-9/src/org/package2/B.java,decode,b64Auth,30
+8,,/package-question-9/src/org/package2/B.java,encodeToString,ciphertext,77
+8,,/package-question-9/src/org/package2/B.java,encodeToString,pbeKey,90
+8,,/package-question-9/src/org/package2/B.java,encodeToString,value,47
+8,,/package-question-9/src/org/package2/B.java,getBytes,,88
+8,,/package-question-9/src/org/package2/B.java,getLong,,48
+8,,/package-question-9/src/org/package2/B.java,getLong,,91
+8,,/package-question-9/src/org/package2/B.java,mb2,algorithm,37
+8,,/package-question-9/src/org/package2/B.java,mb4,data | algorithm | false,59
+8,,/package-question-9/src/org/package2/B.java,mb6,,73
+8,,/package-question-9/src/org/package2/B.java,mb8,pbeKey | 1000,92
+8,,/package-question-9/src/org/package2/B.java,mb9,pbeKey,96
+8,,/package-question-9/src/org/package2/B.java,md.digest,,69
+8,,/package-question-9/src/org/package2/B.java,md.digest,,67
+8,,/package-question-9/src/org/package2/B.java,md.update,data,64
+8,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(pbeKey) + ": " + Base64.getEncoder().encodeToString(pbeKey)+ ": "+ ByteBuffer.wrap(pbeKey).getLong(),89
+8,,/package-question-9/src/org/package2/B.java,println,Arrays.toString(value) + ": " + Base64.getEncoder().encodeToString(value)+ ": "+ ByteBuffer.wrap(value).getLong(),46
+8,,/package-question-9/src/org/package2/B.java,println,md.digest(),67
+8,,/package-question-9/src/org/package2/B.java,random.nextBytes,iv,83
+8,,/package-question-9/src/org/package2/B.java,secureRandom.nextBytes,randomByte,104
+8,,/package-question-9/src/org/package2/B.java,stok.nextToken,,29
+8,,/package-question-9/src/org/package2/B.java,str.getBytes,,76
+8,,/package-question-9/src/org/package2/B.java,varByte.clone,,102

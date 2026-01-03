@@ -1,0 +1,3 @@
+# extract the fetched_metadata.zip file from https://git.unl.edu/firebug/firebug/tree/master/github (this will go into a folder called fetched)
+
+ls fetched | while read f; do python readmetadata.py fetched/$f; done > project-descriptions.txt

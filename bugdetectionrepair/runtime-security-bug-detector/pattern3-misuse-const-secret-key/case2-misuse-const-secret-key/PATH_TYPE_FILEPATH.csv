@@ -1,0 +1,4 @@
+constsecretkey.KeyUseWrong,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case2-misuse-const-secret-key\src\constsecretkey\KeyUseWrong.java
+constsecretkey.Cypher,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case2-misuse-const-secret-key\src\constsecretkey\Cypher.java
+constsecretkey.CertifiedKey,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case2-misuse-const-secret-key\src\constsecretkey\CertifiedKey.java
+constsecretkey.RC4Cypher,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case2-misuse-const-secret-key\src\constsecretkey\RC4Cypher.java

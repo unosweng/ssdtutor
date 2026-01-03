@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-IV" class="java.crypto.spec.IvParameterSpec">
+    <rule method="IvParameterSpec">
+        <argument index="1" name="nextBytes">
+            <value string="*" security="weak"/>
+            <value reference="r1-javax-secureRandom" security="strong"/>
+            <value reference="r2-javax-secureRandom" security="strong"/>
+            <value reference="r3-javax-secureRandom" security="strong"/>
+        </argument>
+        <argument index="2" name="offset" optional="True">
+            <value int="*" />
+        </argument>
+        <argument index="3" name="len" optional="True">
+            <value int="*" />
+        </argument>
+    </rule>    
+</rules>

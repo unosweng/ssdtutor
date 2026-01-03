@@ -1,0 +1,11 @@
+<rules>
+    <rule index="1" className="javax.crypto.Cipher" case="1" methodName="getInstance" argPos="0" repairMenu="Do not use Electronic CodeBook mode for Encryption"/>
+    <rule index="2" className="java.security.MessageDigest" case="2" methodName="getInstance" argPos="0" repairMenu="Do not use Reversible one-way hash"/>
+    <rule index="3" className="javax.crypto.spec.SecretKeySpec" case="3" methodName="SecretKeySpec" repairMenu="Do not use Constant Secret Keys"/>
+    <rule index="4" className="javax.crypto.spec.PBEParameterSpec" case="4" methodName="PBEParameterSpec" argPos="0" repairMenu="Do not use Constant Salts for PBE"/>
+    <rule index="5" className="javax.crypto.spec.PBEParameterSpec" case="5" methodName="PBEParameterSpec" argPos="1" repairMenu="Do not use Fewer than 1000 Iterations for PBE"/>
+    <rule index="6" className="java.security.SecureRandom" case="6" argPos="0" repairMenu="Do not use Static seeds to seed SecureRandom"/>
+    <rule index="7" className="javax.crypto.KeyGenerator" case="7" argPos="0" methodName="getInstance" repairMenu="Do not use Constant Keys for Key Generator"/>
+    <rule index="8" className="javax.crypto.SecretKeyFactory" case="8" argPos="0" methodName="getInstance" repairMenu="Do not use Constant SecretFactory Keys"/>
+    <rule index="9" className="javax.crypto.spec.IvParameterSpec" case="9" argPos="0" methodName="IvParameterSpec" repairMenu="Do not use Constant Initialization Vector"/>
+</rules>

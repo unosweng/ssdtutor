@@ -1,0 +1,10 @@
+Run the crawl.sh file
+
+Usage: ./crawl.sh <options>
+Search all Java repositories on Github with supplied options.
+Options:
+-h Print help, do not use it with other options.
+-s [integer]: Find all repositories with minimum stars.
+-f [integer]: Find all repositories with minimum forks.
+-t [string]: Find all repositories in a topic.
+-p [YYYY-MM-DD]: Find all repositories which were pushed after the specified date.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-java-certificateFactory" class="java.security.cert.CertificateFactory">
+    <rule method="getInstance">
+        <argument index="1" name="transformation" searchType="contains">
+            <value string="X.509"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="generateCertificate" id="r-java-certificate">
+        <argument index="1" name="InputStream">
+            <value inStream="(.*?)"/>
+        </argument>	
+    </rule>
+    <rule method="generateCertPath">
+        <argument index="1" name="InputStream">
+            <value inStream="(.*?)"/>
+        </argument>	
+        <argument index="2" name="encoding">
+            <value string="(.*?)"/>
+        </argument>	
+    </rule>
+    <rule method="generateCRL">
+        <argument index="1" name="InputStream">
+            <value inStream="(.*?)"/>
+        </argument>
+    </rule>
+</rules>

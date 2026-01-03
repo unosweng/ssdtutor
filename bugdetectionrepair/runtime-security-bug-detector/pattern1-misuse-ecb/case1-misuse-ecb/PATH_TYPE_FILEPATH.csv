@@ -1,0 +1,4 @@
+com.JHapps.eKool.SecurePreferences,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern1-misuse-ecb\case1-misuse-ecb\src\com\JHapps\eKool\SecurePreferences.java
+com.JHapps.eKool.SecurePreferencesException,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern1-misuse-ecb\case1-misuse-ecb\src\com\JHapps\eKool\SecurePreferences.java
+electronicCodeBook.EncryptWeak,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern1-misuse-ecb\case1-misuse-ecb\src\electronicCodeBook\EncryptWeak.java
+electronicCodeBook.EncryptStrong,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern1-misuse-ecb\case1-misuse-ecb\src\electronicCodeBook\EncryptStrong.java

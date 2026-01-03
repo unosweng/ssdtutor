@@ -1,0 +1,669 @@
+Pattern, Group, Path, IndName, Args, Line
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Arrays.fill,buf | (byte)0,38
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,29
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,51
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Math.min,bufferLength | w.length - i,37
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,System.arraycopy,w | i | buf | 0 | size,39
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,buf,40
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,decodedValue,54
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.DECRYPT_MODE | key,52
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.ENCRYPT_MODE | key,30
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,decryptedValue.trim,,56
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,28
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,50
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,ketString.getBytes,,61
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,plainText.getBytes,,31
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.append,Base64.encodeToString(buf,Base64.DEFAULT),41
+1,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.toString,,44
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,abs,,31
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,bi.toString,RADIX,33
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.digest,,48
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.update,data,47
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,e.printStackTrace,,52
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,getMD5,url.getBytes(),30
+1,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,url.getBytes,,30
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,abs,,39
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,bi.toString,RADIX,40
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.digest,,48
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.update,data,47
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,getMD5,imageUri.getBytes(),38
+1,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,imageUri.getBytes,,38
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",23
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",34
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,byteMi,36
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,encryptString.getBytes(),25
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | key | zeroIv,35
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | key | zeroIv,24
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,decryptKey.getBytes,,33
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptDES,encryptString | key,14
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptKey.getBytes,,22
+1,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptString.getBytes,,25
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,Cipher.getInstance,PBEWithMD5AndDES,69
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,SecretKeyFactory.getInstance,PBEWithMD5AndDES,60
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,decrypt,secretKey | salt | ciphertext,63
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.doFinal,ciphertext,75
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,70
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,keyFac.generateSecret,pbeKeySpec,61
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,86
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,87
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,72
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,61
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,122
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecureRandom.getInstance,randomAlgorithm,75
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.doFinal,ciphertext,102
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,90
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.doFinal,cleartext,95
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.init,Cipher.ENCRYPT_MODE | secretKey | pbeParamSpec,89
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,79
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,55
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,66
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,123
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,73
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,62
+1,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,saltGen.nextBytes,this.salt,77
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,61
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,80
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,KeyGenerator.getInstance,"AES",41
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",43
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",48
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,83
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,64
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.DECRYPT_MODE | key | initVector,81
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.ENCRYPT_MODE | key | initVector,62
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,DefKey | DefInitVector | message,94
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,90
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,DefKey | DefInitVector | message,75
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,71
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,44
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,49
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,46
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,51
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,90
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,71
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initial,key | initVector,53
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,ivRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),49
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,71
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,90
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,46
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,51
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | ivRandom,50
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | keyRandom,45
+1,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),44
+1,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,KeyGenerator.getInstance,"DES",59
+1,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.generateKey,,61
+1,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.init,new SecureRandom(stringKey.getBytes()),60
+1,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,setKey,key,41
+1,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,stringKey.getBytes,,60
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,69
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,112
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,62
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,105
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,retByte,126
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,source.getBytes(),75
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | securekey | spec,115
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | securekey | spec,72
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,87
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,129
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,,122
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,"ISO-8859-1",118
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,63
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,106
+1,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,source.getBytes,,75
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,63
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,65
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeyFactory.getInstance,KEYGEN_ALGORITHM,58
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,104
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,106
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,factory.generateSecret,keySpec,61
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,getBytes,UTF8,79
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,header.length,,100
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,key.length,,100
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.doFinal,Base64.decode(obfuscated),92
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.init,Cipher.DECRYPT_MODE | secret | new IvParameterSpec(IV),66
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.doFinal,(header + key + original).getBytes(UTF8),79
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.init,Cipher.ENCRYPT_MODE | secret | new IvParameterSpec(IV),64
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.indexOf,header + key,95
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.length,,100
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.substring,header.length() + key.length() | result.length(),100
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,tmp.getEncoded,,62
+1,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,toCharArray,,60
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Arrays.fill,buf | (byte)0,38
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,51
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,29
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Math.min,bufferLength | w.length - i,37
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,System.arraycopy,w | i | buf | 0 | size,39
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,buf,40
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,decodedValue,54
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.DECRYPT_MODE | key,52
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.ENCRYPT_MODE | key,30
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,decryptedValue.trim,,56
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,28
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,50
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,ketString.getBytes,,61
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,plainText.getBytes,,31
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.append,Base64.encodeToString(buf,Base64.DEFAULT),41
+2,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.toString,,44
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,abs,,31
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,bi.toString,RADIX,33
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.digest,,48
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.update,data,47
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,e.printStackTrace,,52
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,getMD5,url.getBytes(),30
+2,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,url.getBytes,,30
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,abs,,39
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,bi.toString,RADIX,40
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.digest,,48
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.update,data,47
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,getMD5,imageUri.getBytes(),38
+2,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,imageUri.getBytes,,38
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",34
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",23
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,byteMi,36
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,encryptString.getBytes(),25
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | key | zeroIv,35
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | key | zeroIv,24
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,decryptKey.getBytes,,33
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptDES,encryptString | key,14
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptKey.getBytes,,22
+2,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptString.getBytes,,25
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,Cipher.getInstance,PBEWithMD5AndDES,69
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,SecretKeyFactory.getInstance,PBEWithMD5AndDES,60
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,decrypt,secretKey | salt | ciphertext,63
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.doFinal,ciphertext,75
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,70
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,keyFac.generateSecret,pbeKeySpec,61
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,87
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,86
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,72
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,122
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,61
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecureRandom.getInstance,randomAlgorithm,75
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.doFinal,ciphertext,102
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,90
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.doFinal,cleartext,95
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.init,Cipher.ENCRYPT_MODE | secretKey | pbeParamSpec,89
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,66
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,79
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,55
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,123
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,62
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,73
+2,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,saltGen.nextBytes,this.salt,77
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,80
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,61
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,KeyGenerator.getInstance,"AES",41
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",48
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",43
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,83
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,64
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.DECRYPT_MODE | key | initVector,81
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.ENCRYPT_MODE | key | initVector,62
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,DefKey | DefInitVector | message,94
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,90
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,DefKey | DefInitVector | message,75
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,71
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,49
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,44
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,46
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,51
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,90
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,71
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initial,key | initVector,53
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,ivRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),49
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,90
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,71
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,46
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,51
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | ivRandom,50
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | keyRandom,45
+2,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),44
+2,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,KeyGenerator.getInstance,"DES",59
+2,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.generateKey,,61
+2,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.init,new SecureRandom(stringKey.getBytes()),60
+2,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,setKey,key,41
+2,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,stringKey.getBytes,,60
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,69
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,112
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,62
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,105
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,retByte,126
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,source.getBytes(),75
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | securekey | spec,115
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | securekey | spec,72
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,87
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,129
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,,122
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,"ISO-8859-1",118
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,63
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,106
+2,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,source.getBytes,,75
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,65
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,63
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeyFactory.getInstance,KEYGEN_ALGORITHM,58
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,104
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,106
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,factory.generateSecret,keySpec,61
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,getBytes,UTF8,79
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,header.length,,100
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,key.length,,100
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.doFinal,Base64.decode(obfuscated),92
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.init,Cipher.DECRYPT_MODE | secret | new IvParameterSpec(IV),66
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.doFinal,(header + key + original).getBytes(UTF8),79
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.init,Cipher.ENCRYPT_MODE | secret | new IvParameterSpec(IV),64
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.indexOf,header + key,95
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.length,,100
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.substring,header.length() + key.length() | result.length(),100
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,tmp.getEncoded,,62
+2,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,toCharArray,,60
+3,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,SecretKeySpec,ketString.getBytes() | ALGORITHM_AES,61
+3,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,SecretKeySpec,decryptKey.getBytes() | "DES",33
+3,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,SecretKeySpec,encryptKey.getBytes() | "DES",22
+3,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecretKeySpec,key.getBytes(StandardCharsets.UTF_8) | "AES",71
+3,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecretKeySpec,key.getBytes(StandardCharsets.UTF_8) | "AES",90
+3,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecretKeySpec,privateKey | "AES",35
+3,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeySpec,tmp.getEncoded() | "AES",62
+4,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,PBEParameterSpec,salt | 20,68
+4,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,PBEParameterSpec,salt | SALT_GEN_ITER_COUNT,84
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Arrays.fill,buf | (byte)0,38
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,29
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,51
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Math.min,bufferLength | w.length - i,37
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,System.arraycopy,w | i | buf | 0 | size,39
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,buf,40
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,decodedValue,54
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.DECRYPT_MODE | key,52
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.ENCRYPT_MODE | key,30
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,decryptedValue.trim,,56
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,28
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,50
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,ketString.getBytes,,61
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,plainText.getBytes,,31
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.append,Base64.encodeToString(buf,Base64.DEFAULT),41
+5,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.toString,,44
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,abs,,31
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,bi.toString,RADIX,33
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.digest,,48
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.update,data,47
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,e.printStackTrace,,52
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,getMD5,url.getBytes(),30
+5,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,url.getBytes,,30
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,abs,,39
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,bi.toString,RADIX,40
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.digest,,48
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.update,data,47
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,getMD5,imageUri.getBytes(),38
+5,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,imageUri.getBytes,,38
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",23
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",34
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,byteMi,36
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,encryptString.getBytes(),25
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | key | zeroIv,35
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | key | zeroIv,24
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,decryptKey.getBytes,,33
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptDES,encryptString | key,14
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptKey.getBytes,,22
+5,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptString.getBytes,,25
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,Cipher.getInstance,PBEWithMD5AndDES,69
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,SecretKeyFactory.getInstance,PBEWithMD5AndDES,60
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,decrypt,secretKey | salt | ciphertext,63
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.doFinal,ciphertext,75
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,70
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,keyFac.generateSecret,pbeKeySpec,61
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,86
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,87
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,61
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,122
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,72
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecureRandom.getInstance,randomAlgorithm,75
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.doFinal,ciphertext,102
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,90
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.doFinal,cleartext,95
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.init,Cipher.ENCRYPT_MODE | secretKey | pbeParamSpec,89
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,79
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,55
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,66
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,73
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,123
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,62
+5,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,saltGen.nextBytes,this.salt,77
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,80
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,61
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,KeyGenerator.getInstance,"AES",41
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",43
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",48
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,83
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,64
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.DECRYPT_MODE | key | initVector,81
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.ENCRYPT_MODE | key | initVector,62
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,DefKey | DefInitVector | message,94
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,90
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,DefKey | DefInitVector | message,75
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,71
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,49
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,44
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,46
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,51
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,90
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,71
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initial,key | initVector,53
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,ivRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),49
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,71
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,90
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,46
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,51
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | ivRandom,50
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | keyRandom,45
+5,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),44
+5,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,KeyGenerator.getInstance,"DES",59
+5,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.generateKey,,61
+5,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.init,new SecureRandom(stringKey.getBytes()),60
+5,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,setKey,key,41
+5,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,stringKey.getBytes,,60
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,112
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,69
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,62
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,105
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,retByte,126
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,source.getBytes(),75
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | securekey | spec,115
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | securekey | spec,72
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,87
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,129
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,,122
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,"ISO-8859-1",118
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,106
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,63
+5,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,source.getBytes,,75
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,65
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,63
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeyFactory.getInstance,KEYGEN_ALGORITHM,58
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,106
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,104
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,factory.generateSecret,keySpec,61
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,getBytes,UTF8,79
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,header.length,,100
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,key.length,,100
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.doFinal,Base64.decode(obfuscated),92
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.init,Cipher.DECRYPT_MODE | secret | new IvParameterSpec(IV),66
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.doFinal,(header + key + original).getBytes(UTF8),79
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.init,Cipher.ENCRYPT_MODE | secret | new IvParameterSpec(IV),64
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.indexOf,header + key,95
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.length,,100
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.substring,header.length() + key.length() | result.length(),100
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,tmp.getEncoded,,62
+5,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,toCharArray,,60
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Arrays.fill,buf | (byte)0,38
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,51
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,29
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Math.min,bufferLength | w.length - i,37
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,System.arraycopy,w | i | buf | 0 | size,39
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,buf,40
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,decodedValue,54
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.DECRYPT_MODE | key,52
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.ENCRYPT_MODE | key,30
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,decryptedValue.trim,,56
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,50
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,28
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,ketString.getBytes,,61
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,plainText.getBytes,,31
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.append,Base64.encodeToString(buf,Base64.DEFAULT),41
+6,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.toString,,44
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,abs,,31
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,bi.toString,RADIX,33
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.digest,,48
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.update,data,47
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,e.printStackTrace,,52
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,getMD5,url.getBytes(),30
+6,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,url.getBytes,,30
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,abs,,39
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,bi.toString,RADIX,40
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.digest,,48
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.update,data,47
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,getMD5,imageUri.getBytes(),38
+6,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,imageUri.getBytes,,38
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",23
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",34
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,byteMi,36
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,encryptString.getBytes(),25
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | key | zeroIv,35
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | key | zeroIv,24
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,decryptKey.getBytes,,33
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptDES,encryptString | key,14
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptKey.getBytes,,22
+6,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptString.getBytes,,25
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,Cipher.getInstance,PBEWithMD5AndDES,69
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,SecretKeyFactory.getInstance,PBEWithMD5AndDES,60
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,decrypt,secretKey | salt | ciphertext,63
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.doFinal,ciphertext,75
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,70
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,keyFac.generateSecret,pbeKeySpec,61
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,87
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,86
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,122
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,72
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,61
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecureRandom.getInstance,randomAlgorithm,75
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.doFinal,ciphertext,102
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,90
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.doFinal,cleartext,95
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.init,Cipher.ENCRYPT_MODE | secretKey | pbeParamSpec,89
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,79
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,55
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,66
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,73
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,123
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,62
+6,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,saltGen.nextBytes,this.salt,77
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,80
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,61
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,KeyGenerator.getInstance,"AES",41
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",43
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",48
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,83
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,64
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.DECRYPT_MODE | key | initVector,81
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.ENCRYPT_MODE | key | initVector,62
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,DefKey | DefInitVector | message,94
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,90
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,DefKey | DefInitVector | message,75
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,71
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,44
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,49
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,51
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,46
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,71
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,90
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initial,key | initVector,53
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,ivRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),49
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,90
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,71
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,51
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,46
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | ivRandom,50
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | keyRandom,45
+6,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),44
+6,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,KeyGenerator.getInstance,"DES",59
+6,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.generateKey,,61
+6,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.init,new SecureRandom(stringKey.getBytes()),60
+6,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,setKey,key,41
+6,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,stringKey.getBytes,,60
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,69
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,112
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,105
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,62
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,retByte,126
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,source.getBytes(),75
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | securekey | spec,115
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | securekey | spec,72
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,129
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,87
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,,122
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,"ISO-8859-1",118
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,63
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,106
+6,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,source.getBytes,,75
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,65
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,63
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeyFactory.getInstance,KEYGEN_ALGORITHM,58
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,106
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,104
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,factory.generateSecret,keySpec,61
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,getBytes,UTF8,79
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,header.length,,100
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,key.length,,100
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.doFinal,Base64.decode(obfuscated),92
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.init,Cipher.DECRYPT_MODE | secret | new IvParameterSpec(IV),66
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.doFinal,(header + key + original).getBytes(UTF8),79
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.init,Cipher.ENCRYPT_MODE | secret | new IvParameterSpec(IV),64
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.indexOf,header + key,95
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.length,,100
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.substring,header.length() + key.length() | result.length(),100
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,tmp.getEncoded,,62
+6,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,toCharArray,,60
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Arrays.fill,buf | (byte)0,38
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,29
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Cipher.getInstance,ALGORITHM,51
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,Math.min,bufferLength | w.length - i,37
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,System.arraycopy,w | i | buf | 0 | size,39
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,buf,40
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.doFinal,decodedValue,54
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.DECRYPT_MODE | key,52
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,chiper.init,Cipher.ENCRYPT_MODE | key,30
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,decryptedValue.trim,,56
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,50
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,generateKey,ketString,28
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,ketString.getBytes,,61
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,plainText.getBytes,,31
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.append,Base64.encodeToString(buf,Base64.DEFAULT),41
+7,,/pattern1-misuse/src/com/applozic/mobicommons/encryption/EncryptionUtils.java,stringBuffer.toString,,44
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,abs,,31
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,bi.toString,RADIX,33
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.digest,,48
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,digest.update,data,47
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,e.printStackTrace,,52
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,getMD5,url.getBytes(),30
+7,,/pattern2-misuse/src/com/wo2b/sdk/common/util/io/FileNameGenerator.java,url.getBytes,,30
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,MessageDigest.getInstance,HASH_ALGORITHM,46
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,abs,,39
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,bi.toString,RADIX,40
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.digest,,48
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,digest.update,data,47
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,getMD5,imageUri.getBytes(),38
+7,,/pattern2-misuse/src/opensource/component/imageloader/cache/disc/naming/Md5FileNameGenerator.java,imageUri.getBytes,,38
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",23
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,Cipher.getInstance,"DES/CBC/PKCS5Padding",34
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,byteMi,36
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.doFinal,encryptString.getBytes(),25
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | key | zeroIv,35
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | key | zeroIv,24
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,decryptKey.getBytes,,33
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptDES,encryptString | key,14
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptKey.getBytes,,22
+7,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,encryptString.getBytes,,25
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,Cipher.getInstance,PBEWithMD5AndDES,69
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,SecretKeyFactory.getInstance,PBEWithMD5AndDES,60
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,decrypt,secretKey | salt | ciphertext,63
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.doFinal,ciphertext,75
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,desDecryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,70
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/DESDecryptionService.java,keyFac.generateSecret,pbeKeySpec,61
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,86
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,Cipher.getInstance,PBEWithSHA256And256BitAES,87
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,122
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,72
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecretKeyFactory.getInstance,PBEWithSHA256And256BitAES,61
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,SecureRandom.getInstance,randomAlgorithm,75
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.doFinal,ciphertext,102
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,decryptionCipher.init,Cipher.DECRYPT_MODE | secretKey | pbeParamSpec,90
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.doFinal,cleartext,95
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,encryptionCipher.init,Cipher.ENCRYPT_MODE | secretKey | pbeParamSpec,89
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,55
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,79
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,initCiphers,,66
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,73
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,62
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,keyFac.generateSecret,pbeKeySpec,123
+7,,/pattern4-misuse/src/com/u17od/upm/crypto/EncryptionService.java,saltGen.nextBytes,this.salt,77
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,80
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,Cipher.getInstance,MODE,61
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,KeyGenerator.getInstance,"AES",41
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",48
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,SecureRandom.getInstance,"SHA1PRNG",43
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,83
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.doFinal,message,64
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.DECRYPT_MODE | key | initVector,81
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,cipher.init,Cipher.ENCRYPT_MODE | key | initVector,62
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,DefKey | DefInitVector | message,94
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,decrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,90
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,DefKey | DefInitVector | message,75
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,encrypt,new SecretKeySpec(key.getBytes(StandardCharsets.UTF_8),"AES") | new IvParameterSpec(initVector.getBytes(StandardCharsets.UTF_8)) | message,71
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,49
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getBytes,StandardCharsets.UTF_8,44
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,46
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,getEncoded,,51
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,90
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initVector.getBytes,StandardCharsets.UTF_8,71
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,initial,key | initVector,53
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,ivRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),49
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,71
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,key.getBytes,StandardCharsets.UTF_8,90
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,46
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.generateKey,,51
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | ivRandom,50
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyGenerator.init,128 | keyRandom,45
+7,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,keyRandom.setSeed,"test~!@_128".getBytes(StandardCharsets.UTF_8),44
+7,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,KeyGenerator.getInstance,"DES",59
+7,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.generateKey,,61
+7,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,generator.init,new SecureRandom(stringKey.getBytes()),60
+7,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,setKey,key,41
+7,,/pattern6-misuse/src/me/panpf/tool4j/util/DESCoder.java,stringKey.getBytes,,60
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,69
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,Cipher.getInstance,TRANSFORMATION,112
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,105
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,SecretKeyFactory.getInstance,ALGORITHM,62
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,retByte,126
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.doFinal,source.getBytes(),75
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.DECRYPT_MODE | securekey | spec,115
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,cipher.init,Cipher.ENCRYPT_MODE | securekey | spec,72
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,87
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,e.printStackTrace,,129
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,,122
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,encrypted.getBytes,"ISO-8859-1",118
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,63
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,keyFactory.generateSecret,dks,106
+7,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,source.getBytes,,75
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,65
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,Cipher.getInstance,CIPHER_ALGORITHM,63
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,SecretKeyFactory.getInstance,KEYGEN_ALGORITHM,58
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,106
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,e.getMessage,,104
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,factory.generateSecret,keySpec,61
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,getBytes,UTF8,79
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,header.length,,100
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,key.length,,100
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.doFinal,Base64.decode(obfuscated),92
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mDecryptor.init,Cipher.DECRYPT_MODE | secret | new IvParameterSpec(IV),66
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.doFinal,(header + key + original).getBytes(UTF8),79
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,mEncryptor.init,Cipher.ENCRYPT_MODE | secret | new IvParameterSpec(IV),64
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.indexOf,header + key,95
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.length,,100
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,result.substring,header.length() + key.length() | result.length(),100
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,tmp.getEncoded,,62
+7,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,toCharArray,,60
+8,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,IvParameterSpec,iv,32
+8,,/pattern3-misuse/src/com/d3/d3xmpp/util/DES.java,IvParameterSpec,iv,21
+8,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,IvParameterSpec,initVector,36
+8,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,IvParameterSpec,initVector.getBytes(StandardCharsets.UTF_8),71
+8,,/pattern5-misuse/src/org/yzh/web/commons/EncryptUtils.java,IvParameterSpec,initVector.getBytes(StandardCharsets.UTF_8),90
+8,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,IvParameterSpec,IV,109
+8,,/pattern7-misuse/src/com/github/lazylibrary/util/DES.java,IvParameterSpec,IV,66
+8,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,IvParameterSpec,IV,66
+8,,/pattern8-misuse/src/com/google/android/vending/licensing/AESObfuscator.java,IvParameterSpec,IV,64

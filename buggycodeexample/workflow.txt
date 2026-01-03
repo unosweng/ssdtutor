@@ -1,0 +1,37 @@
+ALGO: the algorithm used in the data protection
+ALGO.MODE: the mode used in some data protection algorithms
+KEY: the key used in the encryption algorithm
+IV: the initialization vector used in the encryption algorithm
+SEED: the seed value, which has two parts, KEY and IV, used in the pseudorandom number generation 
+
+if ALGO == DES
+    return INSECURE
+
+if ALGO == 3DES
+    if KEY is HARDCODED || SAVED
+        return INSECURE
+    return SECURE
+
+if ALGO == AES
+    if ALGO.MODE ==  ECB
+        return INSECURE
+    if ALGO.MODE == CBC || CTR || GCM || CCM
+        if KEY/IV is HARDCODED || SAVED
+            return INSECURE
+        return SECURE
+
+if ALGO == SHA-1 || MD5 || BASE64
+    return INSECURE
+
+if ALGO == SHA-2 || SHA-3
+    return SECURE
+
+if ALGO == MAC || HMAC
+    if KEY/IV is HARDCODED || SAVED
+        return INSECURE
+    return SECURE
+
+if ALGO == PRNG
+    if SEED is HARDCODED || SAVED
+        return INSECURE
+    return SECURE

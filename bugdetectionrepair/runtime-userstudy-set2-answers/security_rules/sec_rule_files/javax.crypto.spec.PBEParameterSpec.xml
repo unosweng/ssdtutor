@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-IV" class="javax.crypto.spec.PBEParameterSpec">
+    <rule method="PBEParameterSpec">
+        <argument index="1" name="salt" searchType="equals">
+            <value byte="(.*?)" security="weak"/>
+            <value reference="r-javax-secureRandom" security="strong"/>
+        </argument>
+        <argument index="2" name="iterationCount" searchType="equals">
+            <value int=".*\d.*" minimum="1000"></value>/>
+        </argument>
+    </rule>    
+</rules>

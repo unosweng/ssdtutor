@@ -1,0 +1,4 @@
+falsePositiveExamples.Pattern1_ElectronicCodeBook,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\falsePositiveExamples\src\falsePositiveExamples\Pattern1_ElectronicCodeBook.java
+falsePositiveExamples.Pattern2_WeakHashFunction,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\falsePositiveExamples\src\falsePositiveExamples\Pattern2_WeakHashFunction.java
+falsePositiveExamples.Pattern3_ConstantSecretKey,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\falsePositiveExamples\src\falsePositiveExamples\Pattern3_ConstantSecretKey.java
+falsePositiveExamples.Pattern6_SecureRandomConstantSeed,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\falsePositiveExamples\src\falsePositiveExamples\Pattern6_SecureRandomConstantSeed.java

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="bugdetectionexample">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../programs/eclipse/eclipse-rcp-neon-3-advtool-class-november/neon-rcp/Eclipse.app/Contents/Eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Plug-in Dependencies.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/javax.inject_1.0.0.v20091030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.runtime_3.12.0.v20160606-1342.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.osgi_3.11.3.v20170209-1843.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.osgi.compatibility.state_1.0.200.v20160504-1419.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.common_3.8.0.v20160509-1230.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.jobs_3.8.0.v20160509-0411.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.registry_3.6.100.v20160223-2218.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.preferences_3.6.1.v20160815-1406.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.contenttype_3.5.100.v20160418-1621.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.swt_3.105.3.v20170228-0512.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.swt.cocoa.macosx.x86_64_3.105.3.v20170228-0512.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.model.workbench_1.2.0.v20160229-1459.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jface_3.12.2.v20170113-2113.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.commands_3.8.1.v20161221-1651.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.services_1.2.100.v20160506-0759.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.workbench_1.4.0.v20160517-1624.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.di_1.6.1.v20160712-0927.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.di.annotations_1.5.0.v20151127-1241.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.di_1.1.100.v20160506-0759.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.contexts_1.5.1.v20170203-1100.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.zest.core_1.5.300.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.draw2d_3.10.100.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.zest.layouts_1.1.300.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt_3.12.3.v20170301-0400.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.core_3.12.3.v20170228-1205.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.compiler.apt_1.2.100.v20160418-1457.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.compiler.tool_1.1.100.v20160418-1457.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.ui_3.12.2.v20160929-0804.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.resources_3.11.1.v20161107-2032.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.ui_3.108.1.v20160929-1045.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.ui.workbench_3.108.3.v20170216-1539.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.workbench3_0.13.100.v20160506-0759.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.text_3.6.0.v20160503-1849.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.slf4j.api_1.7.2.v20121108-1250.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/com.jcraft.jsch_0.1.54.v20170116-1932.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/javax.annotation_1.2.0.v201602091430.jar"/>
+    </path>
+    <path id="bugdetectionexample.classpath">
+        <path refid="Plug-in Dependencies.libraryclasspath"/>
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="bugdetectionexample.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="FindMisuseECB">
+        <java classname="noninteractive.FindMisuseECB" failonerror="true" fork="yes">
+            <classpath refid="bugdetectionexample.classpath"/>
+        </java>
+    </target>
+    <target name="FindMisuseConstSecretKey">
+        <java classname="noninteractive.FindMisuseConstSecretKey" failonerror="true" fork="yes">
+            <classpath refid="bugdetectionexample.classpath"/>
+        </java>
+    </target>
+    <target name="Find3MisuseConstSecretKey">
+        <java classname="noninteractive.Find3MisuseConstSecretKey" failonerror="true" fork="yes">
+            <classpath refid="bugdetectionexample.classpath"/>
+        </java>
+    </target>
+    <target name="Find3MisuseConstSecretKey (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="noninteractive.Find3MisuseConstSecretKey" todir="${junit.output.dir}"/>
+            <jvmarg line="-ea"/>
+            <classpath refid="bugdetectionexample.classpath"/>
+        </junit>
+    </target>
+    <target name="Find1MisuseECB">
+        <java classname="noninteractive.Find1MisuseECB" failonerror="true" fork="yes">
+            <classpath refid="bugdetectionexample.classpath"/>
+        </java>
+    </target>
+    <target name="Find2MisuseHashFun">
+        <java classname="noninteractive.Find2MisuseHashFun" failonerror="true" fork="yes">
+            <classpath refid="bugdetectionexample.classpath"/>
+        </java>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

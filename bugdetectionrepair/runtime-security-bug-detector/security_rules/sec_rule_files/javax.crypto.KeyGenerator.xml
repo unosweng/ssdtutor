@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-keyGenerator" class="javax.crypto.KeyGenerator">
+    <rule method="getInstance">
+        <argument index="1" name="algorithm" searchType="equals">
+            <value string="AES" security="strong"/>
+            <value string="DES" security="weak"/>
+            <value string="DESede" security="strong"/>
+            <value string="Blowfish" security="weak"/>
+            <value string="RC2" security="weak"/>
+            <value string="\bAES.*\b" security="weak"/>
+            <value string="ARCFOUR" security="strong"/>
+            <value string="HmacMD5" security="strong"/>
+            <value string="HmacSHA1" security="strong"/>
+            <value string="HmacSHA256" security="strong"/>
+            <value string="HmacSHA384" security="strong"/>
+            <value string="HmacSHA512" security="strong"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="init">
+        <argument index="1" name="keysize">
+            <value integer=".*\d.*"/>
+        </argument>
+        <argument index="2" name="secureRandom">
+            <value reference="r-javax-secureRandom"/>
+        </argument>
+    </rule>
+    <rule method="generateKey">
+        <value secretKey="SecretKey"/>
+    </rule>
+</rules>

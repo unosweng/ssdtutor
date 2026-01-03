@@ -1,0 +1,243 @@
+Pattern, Group, Path, IndName, Args, Line
+1,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,KEY_TRANSFORMATION,35
+1,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,34
+1,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,33
+1,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setEncrypt,encryptKeys,37
+1,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setName,preferenceName,36
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,Cipher.getInstance,algorithm,34
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,KeyGenerator.getInstance,"AES",24
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,ciphertext,43
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,plaintext.getBytes(),38
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.DECRYPT_MODE | key | new IvParameterSpec(iv),42
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.ENCRYPT_MODE | key | new IvParameterSpec(iv),37
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,50
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,52
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,54
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,56
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,58
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,48
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.generateKey,,26
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.init,128,25
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,plaintext.getBytes,,38
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(ciphertext),39
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(plaintext),45
+1,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,prng.nextBytes,iv,31
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",63
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithm,24
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithmInVar,53
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,arg1,73
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,KeyGenerator.getInstance,"DES",19
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,ciphertext,33
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,plaintext.getBytes(),28
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.DECRYPT_MODE | key,32
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.ENCRYPT_MODE | key,27
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,75
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,55
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,77
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,65
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,57
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,67
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,42
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,44
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,40
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,38
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,46
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.generateKey,,21
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.init,128,20
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,plaintext.getBytes,,28
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(ciphertext),29
+1,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(plaintext),35
+2,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,KEY_TRANSFORMATION,35
+2,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,34
+2,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,33
+2,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setEncrypt,encryptKeys,37
+2,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setName,preferenceName,36
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,Cipher.getInstance,algorithm,34
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,KeyGenerator.getInstance,"AES",24
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,ciphertext,43
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,plaintext.getBytes(),38
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.DECRYPT_MODE | key | new IvParameterSpec(iv),42
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.ENCRYPT_MODE | key | new IvParameterSpec(iv),37
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,56
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,48
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,58
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,52
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,54
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,50
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.generateKey,,26
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.init,128,25
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,plaintext.getBytes,,38
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(ciphertext),39
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(plaintext),45
+2,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,prng.nextBytes,iv,31
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",63
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithm,24
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithmInVar,53
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,arg1,73
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,KeyGenerator.getInstance,"DES",19
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,ciphertext,33
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,plaintext.getBytes(),28
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.DECRYPT_MODE | key,32
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.ENCRYPT_MODE | key,27
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,65
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,75
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,57
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,67
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,55
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,77
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,42
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,40
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,46
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,44
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,38
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.generateKey,,21
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.init,128,20
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,plaintext.getBytes,,28
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(ciphertext),29
+2,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(plaintext),35
+5,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,KEY_TRANSFORMATION,35
+5,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,33
+5,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,34
+5,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setEncrypt,encryptKeys,37
+5,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setName,preferenceName,36
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,Cipher.getInstance,algorithm,34
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,KeyGenerator.getInstance,"AES",24
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,ciphertext,43
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,plaintext.getBytes(),38
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.DECRYPT_MODE | key | new IvParameterSpec(iv),42
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.ENCRYPT_MODE | key | new IvParameterSpec(iv),37
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,48
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,52
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,54
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,56
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,58
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,50
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.generateKey,,26
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.init,128,25
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,plaintext.getBytes,,38
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(ciphertext),39
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(plaintext),45
+5,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,prng.nextBytes,iv,31
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",63
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithm,24
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithmInVar,53
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,arg1,73
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,KeyGenerator.getInstance,"DES",19
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,ciphertext,33
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,plaintext.getBytes(),28
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.DECRYPT_MODE | key,32
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.ENCRYPT_MODE | key,27
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,67
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,77
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,65
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,75
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,55
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,57
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,38
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,40
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,42
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,44
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,46
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.generateKey,,21
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.init,128,20
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,plaintext.getBytes,,28
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(ciphertext),29
+5,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(plaintext),35
+6,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,KEY_TRANSFORMATION,35
+6,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,33
+6,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,34
+6,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setEncrypt,encryptKeys,37
+6,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setName,preferenceName,36
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,Cipher.getInstance,algorithm,34
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,KeyGenerator.getInstance,"AES",24
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,ciphertext,43
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,plaintext.getBytes(),38
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.DECRYPT_MODE | key | new IvParameterSpec(iv),42
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.ENCRYPT_MODE | key | new IvParameterSpec(iv),37
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,54
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,52
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,48
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,58
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,56
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,50
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.generateKey,,26
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.init,128,25
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,plaintext.getBytes,,38
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(ciphertext),39
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(plaintext),45
+6,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,prng.nextBytes,iv,31
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",63
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithm,24
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithmInVar,53
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,arg1,73
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,KeyGenerator.getInstance,"DES",19
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,ciphertext,33
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,plaintext.getBytes(),28
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.DECRYPT_MODE | key,32
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.ENCRYPT_MODE | key,27
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,57
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,55
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,77
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,67
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,75
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,65
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,46
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,44
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,42
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,40
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,38
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.generateKey,,21
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.init,128,20
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,plaintext.getBytes,,28
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(ciphertext),29
+6,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(plaintext),35
+7,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,KEY_TRANSFORMATION,35
+7,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,33
+7,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,Cipher.getInstance,TRANSFORMATION,34
+7,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setEncrypt,encryptKeys,37
+7,,/case1-misuse-ecb/src/com/JHapps/eKool/SecurePreferences.java,setName,preferenceName,36
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,Cipher.getInstance,algorithm,34
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,KeyGenerator.getInstance,"AES",24
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,ciphertext,43
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.doFinal,plaintext.getBytes(),38
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.DECRYPT_MODE | key | new IvParameterSpec(iv),42
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,cipher.init,Cipher.ENCRYPT_MODE | key | new IvParameterSpec(iv),37
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,48
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,58
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,56
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,54
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,52
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,e.printStackTrace,,50
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.generateKey,,26
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,keyGen.init,128,25
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,plaintext.getBytes,,38
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(ciphertext),39
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,println,new String(plaintext),45
+7,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,prng.nextBytes,iv,31
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,"AES/ECB/PKCS5PADDING",63
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithm,24
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,algorithmInVar,53
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,Cipher.getInstance,arg1,73
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,KeyGenerator.getInstance,"DES",19
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,ciphertext,33
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.doFinal,plaintext.getBytes(),28
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.DECRYPT_MODE | key,32
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,cipher.init,Cipher.ENCRYPT_MODE | key,27
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,55
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,77
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,65
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,57
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,67
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,75
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,44
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,46
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,40
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,42
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,e.printStackTrace,,38
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.generateKey,,21
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,keyGen.init,128,20
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,plaintext.getBytes,,28
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(ciphertext),29
+7,,/case1-misuse-ecb/src/electronicCodeBook/NewEncryptWeak.java,println,new String(plaintext),35
+8,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,IvParameterSpec,iv,42
+8,,/case1-misuse-ecb/src/electronicCodeBook/EncryptStrong.java,IvParameterSpec,iv,37

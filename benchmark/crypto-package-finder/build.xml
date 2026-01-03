@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="cryptopackagefinder">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="/work/hsiy/shared/programs/eclipse/eclipse-rcp-oxygen-3a/Eclipse.app/Contents/Eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Plug-in Dependencies.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/javax.inject_1.0.0.v20091030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.osgi.compatibility.state_1.1.0.v20170516-1513.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.swt_3.106.3.v20180329-0507.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.swt.cocoa.macosx.x86_64_3.106.3.v20180329-0507.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.model.workbench_2.0.1.v20170713-1800.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jface_3.13.2.v20171022-1656.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.commands_3.9.0.v20170530-1048.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.services_1.3.0.v20170307-2032.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.workbench_1.5.1.v20170815-1446.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.di_1.6.100.v20170421-1418.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.di.annotations_1.6.0.v20170119-2002.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.di_1.2.100.v20170414-1137.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.core.contexts_1.6.0.v20170322-1144.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.zest.core_1.5.300.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.draw2d_3.10.100.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.zest.layouts_1.1.300.201606061308.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt_3.13.4.v20180330-0640.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.core_3.13.102.v20180330-0919.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.compiler.apt_1.3.110.v20180329-0935.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.compiler.tool_1.2.101.v20180329-0935.jar"/>
+        <pathelement location="../.metadata/.plugins/org.eclipse.pde.core/.external_libraries/org.eclipse.jdt.compiler.tool_1.2.101.v20180329-0935/lib/java10api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.ui_3.13.100.v20180330-0726.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.core.resources_3.12.0.v20170417-1558.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.ui_3.109.0.v20170411-1742.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.ui.workbench_3.110.1.v20170704-1208.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.e4.ui.workbench3_0.14.0.v20160630-0740.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.text_3.6.100.v20170203-0814.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jgit_4.9.2.201712150930-r.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.slf4j.api_1.7.2.v20121108-1250.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/com.jcraft.jsch_0.1.54.v20170116-1932.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.eclipse.jdt.core.manipulation_1.9.100.v20180321-0831.jar"/>
+    </path>
+    <path id="cryptopackagefinder.classpath">
+        <path refid="Plug-in Dependencies.libraryclasspath"/>
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="cryptopackagefinder.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="FindCryptoPackages">
+        <java classname="noninteractive.FindCryptoPackages" failonerror="true" fork="yes">
+            <classpath refid="cryptopackagefinder.classpath"/>
+        </java>
+    </target>
+</project>

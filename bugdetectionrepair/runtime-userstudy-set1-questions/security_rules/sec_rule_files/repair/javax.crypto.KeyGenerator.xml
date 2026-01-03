@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-keyGenerator" class="javax.crypto.KeyGenerator">
+    <rule method="getInstance">
+        <argument index="1" name="algorithm" searchType="contains">
+            <value string="AES"/>
+        </argument>
+    </rule>
+    <rule method="init">
+        <argument index="1" name="keysize">
+            <value integer="128"/>
+        </argument>
+    </rule>
+</rules>

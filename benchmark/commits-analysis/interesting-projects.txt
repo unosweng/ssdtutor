@@ -1,0 +1,112 @@
+
+1077_jackpal_android-terminal-emulator:
+742264fae4ab7829629e523422dc70bdb55567b5 R: Encrypt shortcut intentsAs it turns out, the terminal shortcut feature was relying on theexplicit component intent security hole closed in 5112961... ("SplitRUN_SCRIPT handling out into its own activity").Intents that come from
+ shortcuts will be seen as coming from thelauncher, so using a permission to protect shortcut intents is anon-starter (we cannot expect launchers to add arbitrary permissions totheir manifests).  Reverting the change to intent handling isn't aparticularly palatable optio
+n, since it leaks privileges and exposesuser data to any other apps running on the device.Instead, we add a new RUN_SHORTCUT intent (and RunShortcut activity tohandle it) which requires shortcuts to be encrypted and authenticatedusing randomly-generated keys known only t
+o us.  This ensures that onlyshortcuts that the user has created can be run, and that the contents ofthose shortcuts (i.e. the commands that are being run) cannot bediscovered by someone examining stored shortcuts or intent traffic onthe system.  (It is possible for an a
+ttacker who captures a sent intentto replay that intent, repeating the command; the utility of this to anattacker is dubious, since he cannot control, or even discover, whatcommand he's triggering.)Existing user shortcuts must be recreated.  This is unavoidable, giventha
+t existing shortcuts are hard-coded to use the RUN_SCRIPT intent viaRemoteInterface, which is something that we can no longer support.
+    .../java/jackpal/androidterm/RemoteInterface.java
+    .../main/java/jackpal/androidterm/RunShortcut.java
+    .../java/jackpal/androidterm/compat/Base64.java
+    .../jackpal/androidterm/shortcuts/AddShortcut.java
+    .../androidterm/util/ShortcutEncryption.java
+87d0bbe3c54a1d125e2f82bf1bd4763f8089d885 R: Shortcut encryption improvements* Install PRNG workarounds before generating keys or encrypting* Avoid repeated regex pattern compiles when splitting strings onseparators* Add utility functions for Base64-coding with "our" sett
+ings* Address review comments:- Handle errors in decoding decrypted output to String- Log more errors* Improve comments
+    .../main/java/jackpal/androidterm/RunShortcut.java
+    .../java/jackpal/androidterm/compat/Base64.java
+    .../jackpal/androidterm/shortcuts/AddShortcut.java
+    .../androidterm/util/ShortcutEncryption.java
+
+
+1079_guardianproject_chatsecureandroid
+a853692d963b0009546b9973a643c61678482609 R: add AES-256-CBC encrypted file importing for OtrAndroidKeyManagerImplThis is the first version of OTR key importing. It is meant to be a simplebut not horribly insecure method while we are waiting for OTR file transferto be ironed out.
+    src/info/guardianproject/otr/AES_256_CBC.java
+    .../otr/OtrAndroidKeyManagerImpl.java
+    .../otr/app/im/app/WelcomeActivity.java
+c8bf278da7c6dbbf4965b27facf92df31653e67f R: fix crash on shutdown/lock with progress dialogWindowManager  E  android.view.WindowLeaked: Activity org.awesomeapp.messenger.RouterActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{41bea2d8 V.E. .... R......D 0,0-1140,192} that was originallyadded hereE      at android.view.ViewRootImpl.<init>(ViewRootImpl.java:346)E      at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)E      at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)E      at android.app.Dialog.show(Dialog.java:286)E      at org.awesomeapp.messenger.RouterActivity$1.onPreExecute(RouterActivity.java:493)E      at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)E      at android.os.AsyncTask.execute(AsyncTask.java:535)E      at org.awesomeapp.messenger.RouterActivity.completeShutdown(RouterActivity.java:481)E      at org.awesomeapp.messenger.RouterActivity.openEncryptedStores(RouterActivity.java:550)E      at org.awesomeapp.messenger.RouterActivity.onCacheWordOpened(RouterActivity.java:431)E      at info.guardianproject.cacheword.CacheWordHandler.checkCacheWordState(CacheWordHandler.java:409)E      at info.guardianproject.cacheword.CacheWordHandler.access$100(CacheWordHandler.java:27)E      at info.guardianproject.cacheword.CacheWordHandler$1.onReceive(CacheWordHandler.java:440)E      at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)E      at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)E      at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)E      at android.os.Handler.dispatchMessage(Handler.java:102)E      at android.os.Looper.loop(Looper.java:136)E      at android.app.ActivityThread.main(ActivityThread.java:5001)E      at java.lang.reflect.Method.invokeNative(Native Method)E      at java.lang.reflect.Method.invoke(Method.java:515)E      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)E      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)Eat dalvik.system.NativeStart.main(Native Method)dalvikvm  I  Jit: resizing JitTable from 4096 to 8192AndroidRuntime  D  Shutting down VMdalvikvm  W  threadid=1: thread exiting with uncaught exception (group=0x4160bba8)HockeyApp  D  Writing unhandled exception to: /data/data/org.awesomeapp.messenger.debug/files/161c58f9-1887-4501-bcbf-6e95728eabe6.stacktraceAndroidRuntime  E  FATAL EXCEPTION: mainE  Process: org.awesomeapp.messenger.debug, PID: 19550E  java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{41bea2d8 V.E..... R......D 0,0-1140,192} not attached to window managerE      at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:370)E      at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:299)E      at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:84)E      at android.app.Dialog.dismissDialog(Dialog.java:329)E      at android.app.Dialog.dismiss(Dialog.java:312)E      at org.awesomeapp.messenger.RouterActivity$1.onPostExecute(RouterActivity.java:533)Eat org.awesomeapp.messenger.RouterActivity$1.onPostExecute(RouterActivity.java:481)E      at android.os.AsyncTask.finish(AsyncTask.java:632)E      at android.os.AsyncTask.access$600(AsyncTask.java:177)E      at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)E      at android.os.Handler.dispatchMessage(Handler.java:102)E      at android.os.Looper.loop(Looper.java:136)E      at android.app.ActivityThread.main(ActivityThread.java:5001)E      at java.lang.reflect.Method.invokeNative(Native Method)E      at java. lang.reflect.Method.invoke(Method.java:515)E      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)E      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)E      at dalvik.system.NativeStart.main(Native Method)Process  I  Sending signal. PID: 19550 SIG: 9
+    .../otr/app/im/app/WelcomeActivity.java
+5613bf4ee4698e5d5ab278a79112ea26868c9e6f R: import old unencrypted keystore, if it exists
+    .../otr/OtrAndroidKeyManagerImpl.java
+1f4736f1772f7bc745ece381b1efc8910569a12c R: if unencrypted/old keystore exists, keep using that
+    .../otr/OtrAndroidKeyManagerImpl.java
+444b7a4ddae192baa7e2428e151fa04dacf2076c R: Merge pull request #276 from devrandom/otr7Improved OTR decryption error reporting
+69da114a053bddc80c3cb7f6987c7551c3252494 R: Revert "added auto OTR refresh attempt if there is an error decrypting"This reverts commit 65c3147d8d998931973586a29a7be7b9d41d8c4d.
+    src/info/guardianproject/otr/OtrChatListener.java
+faeea9a5d0d8a8056ad31eb7e6f3f77095cc3cbf F: Added mdpi, ldpi, contact info resources
+f8b4f836f6047036a6a710fe54072eb6c7daa969 F: message layout cleanup, new audio icon, and new strings
+66bfcbe350deb509625b1778cbe54cfd928afc37 F: Fixed bad comparisons for 'checkGroupElem' and 'checkExpon' basic verification methods for parameters in SMP.The methods 'checkGroupElem' and 'checkExpon' are basic methods that areused to verify parameters of SMP. These methods used bad boundaryconditions when checking values. As a result, some valid values wereflagged as invalid parameters while others were wrongly accepted.A number of tests are included that check values next to the boundariesto ensure that verification is executed correctly.As part of looking into these errors, I have verified the other methodsof SM.java. Apart from 'checkGroupElem' and 'checkExpon' all methodsmatch their counterparts in java-otr and libotr. (AFAICT)
+    src/net/java/otr4j/crypto/SM.java
+163db8633f369b8ef9e7e2e3a38f0d0071fa28bf F: SMP integration
+    robo-tests/src/net/java/otr4j/crypto/SMTest.java
+8f6037115495d1e16f2ca2394fdc5d57dd349c8e R: Added in bouncycastle source into projected - refactored to info.guardianproject.bouncycastle to avoid namespace collision with built-in libsAdded new "regen key" option mostly for testing/debugging nowAdded new dialogs for start/stop encryptionI think CM7 is working now
+
+
+
+1161_daxiak_mydiary
+f8b6a1a98b460db944e65c0788b604157e074113 F: Add logic for password
+    .../com/kiminonawa/mydiary/shared/Encryption.java
+d9d59b9679e1e3bade1161cd47bd1f3922d5e95a R: Password + encryption logic in SPFHelper
+    .../com/kiminonawa/mydiary/shared/SPFManager.java
+    .../com/kiminonawa/mydiary/util/Encryption.java
+5ff571549704bb6887ca172ee2c236160583b84a R: Modify thd password icon & fix the wrong flow for Encryption.SHA256("")
+    .../mydiary/main/MainSettingDialogFragment.java
+    .../mydiary/security/PasswordActivity.java
+    .../mydiary/shared/MyDiaryApplication.java
+    .../com/kiminonawa/mydiary/shared/SPFManager.java
+0b2a09c1e93fe0f0581ab18b1ff4495791f0c932 F: Finish the password page
+
+
+1228_tozny_java-aes-crypto
+594aaec47dcd5908b625bd3c8692c2cf03bacfe4 F: Fix Javadoc errors due to invalid HTML entities
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+1c6fcb925ff16f616ccc0138eb4a355bd226e69c F: Mostly fix subtle race condition around PRNG initGoogle's PRNG fix can break due to a race condition when two instancesof PrngFixes or PRNGFixes (with different full class name) are runningat the same time.They both will "fight" over who installs theLinuxPRNGSecureRandomProvider provider class. Normally, each one willsucceed, check that they succeeded, and then continue on. However,rarely, one will install its provider while the other is checkingthat its installation succeeded, and cause the other to crash.We now perform a looser check: that the provider's simple name ismerely "LinuxPRNGSecureRandomProvider" instead of checkingfor an exact class.This will fix any instances of the Tozny PrngFixes class fromthrowing a SecurityException.Sadly, though, we cannotfigure out a foolproof way to prevent Google'sfix from crashing when the Tozny PrngFixes class initializes 100%of the time. We have narrowed the race condition window to assmall as possible. But, if you know that other code is installinga PRNG fix as well, then the best thing to do is to not useany additional PRNG fix, Tozny's or otherwise.
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+91ce2950839302c76f455b2edb1796b19590d305 F: Update copyright
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+e451be22392be31079e74df6396cadc421ecfbd3 F: Updated sample app.
+5ff3ea511a21d8348a6275b5daf26f1dc3f8fb6b F: Made BASE_64_FLAGS public as it's useful to know for compatibility.
+2558af69e2077ea4672a63026e2feec993b05a94 R: Merge branch 'master' of https://github.com/scottyab/java-aes-crypto* 'master' of https://github.com/scottyab/java-aes-crypto:minor fixes to urls, corrected test, made sample dependent on module not mavenbumped versions for the changes and pushed snapshot buildadded examples and how to include in project sectionsMade BASE_64_FLAGS public as it's useful to know for compatibility.Updated with reference to the snapshot build in maven centralMissed the isRelease flagRefactored into Android library project with intention of pushing to maven central, so it can be a simple one line dependency.Conflicts:       aes-crypto/aes-crypto.iml       aes-crypto/src/androidTest/java/com/tozny/crypto/android/AesCbcWithIntegrityTest.java   aes-crypto/src/main/java/com/tozny/crypto/android/AesCbcWithIntegrity.java     java-aes-crypto.iml     sample/sample.iml
+11ca29d72c742192c1bbc9dff5e634d7918baa71 F: Use best-practice SecureRandom, rather than specific algorithm.
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+7e2f6596c2d7167e005673a99e4e17f2ba5981b1 R: Initial import of encrypt, key gen, and decrypt functionality
+    AesCbcPadding.java
+5de85f2268d4b85eae7291f9d63b52501df1410c F: Refactored into Android library project with intention of pushing to maven central, so it can be a simple one line dependency.
+a9779b54bb166708d58ef87537f4a75f0a75f721 F: Add flag to not throw an exception if the PRNG fix fails
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+3d74e5d66e684f3ce8c03e20251cf08e0b9edb4e F: Merge fixes
+    .../crypto/android/AesCbcWithIntegrityTest.java
+931d6cfae68250465adee10bf5fc32e427969b82 R: Merge branch 'master' of github.com:tozny/java-aes-crypto
+3e0933c9d95ace6ebb67a4fa02810b9082066f24 F: Refactored into Android library project with intention of pushing to maven central, so it can be a simple one line dependency.
+c7c7d4c37c3e4fb90fd791b2b618f81ed1f0d5d1 F: Remove DOS line endings in sample app.
+9cd60680b04edd833cd14b3f65f0578762b7da83 F: minor fixes to urls, corrected test, made sample dependent on module not maven
+    .../crypto/android/AesCbcWithIntegrityTest.java
+143632e03b08a52310a726de71d6760006ba8cff F: Made BASE_64_FLAGS public as it's useful to know for compatibility.
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+75b925a664f88ae3af4fbc1f30e6f89a52576803 F: Add synchronized statement to make PRNG provider insert atomic to prevent race conditions
+    .../tozny/crypto/android/AesCbcWithIntegrity.java
+bf68c5a277faac44f15c5cb2d77659f3be6dae38 F: minor fixes to urls, corrected test, made sample dependent on module not maven
+9fcd88535eb9e0f28a7e3f2fb3705a275b4e78bb F: Remove broken sample app.
+    .../crypto/android/sample/ApplicationTest.java
+
+
+135_wordpress-mobile_wordpress-android
+3e4968f5a30b2c498ac4b09e274c8070f47916da R: Decrypt password before migrating
+    .../android/util/WPLegacyMigrationUtils.java
+0f80efd231b190f3bb9466e9087aa0f5d82e158d R: wpcom password should be stored encrypted.
+    .../android/ui/accounts/helpers/LoginWPCom.java
+efccc0b6b7ef2305b0e9a98eb7c0c1fae5d09f8a R: Adding global WP.com account. Refs #496* Credentials are stored in Preferences and uses the existingencryption methods for the password.* Incremented db version and added migration script that attempt tomigrate the WP.com credentials from the first matching WP.com blog.* Added basic GCM setup. App ID needs to be added to theconfig.properties in res/raw as gcm.id* Added WordPress.com section to preferences, and added capability for!AddAccountActivity to be used as a WordPress.com authenticator ofsorts.
+    src/org/wordpress/android/WordPress.java
+    src/org/wordpress/android/WordPressDB.java
+    .../wordpress/android/ui/WPActionBarActivity.java
+    .../android/ui/accounts/AddAccountActivity.java
+    .../wordpress/android/ui/posts/PostsActivity.java
+    .../android/ui/prefs/PreferencesActivity.java
+602303edb1420edef3920111490cd4aed9a0bfd6 R: Fixes a typo for encrypted empty password and makes it constant
+    .../android/util/WPLegacyMigrationUtils.java
+56d4f3e1a23a197e4b430747b1ddafc579fb5091 R: Encrypt the password before storing it to preferences. Fixes #671 /cc @maxme
+    .../android/ui/accounts/CreateUserAndBlog.java
+f0678cc5f17b4ee9f97e8f51f837bcbcc98d6d9e R: Adds encryptPassword method back in
+    .../android/util/WPLegacyMigrationUtils.java
+
+

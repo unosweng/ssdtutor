@@ -1,0 +1,36 @@
+/**
+ */
+package visitor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author
+ * @date
+ * @since J2SE-1.8
+ */
+public class CallGraph {
+   int nodeSize = 0;
+   List<CallGraphNode> listNode = new ArrayList<CallGraphNode>();
+
+   public void add(CallGraphNode callGraphNode) {
+      listNode.add(callGraphNode);
+   }
+
+   public List<CallGraphNode> getListNode() {
+      return listNode;
+   }
+
+   public void setListNode(List<CallGraphNode> listNode) {
+      this.listNode = listNode;
+   }
+
+   public int getNodeSize() {
+      return nodeSize;
+   }
+
+   public void setNodeSize(int nodeSize) {
+      this.nodeSize = nodeSize;
+   }
+}

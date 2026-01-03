@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-mac" class="javax.crypto.Mac">
+    <rule method="getInstance">
+        <argument index="1" name="algorithm" searchType="equals">
+            <value string="HmacMD5"/>
+            <value string="HmacSHA1"/>
+            <value string="HmacSHA256"/>
+            <value string="HmacSHA384"/>
+            <value string="HmacSHA512"/>
+            <value string="PBEWithHmacMD5"/>
+            <value string="PBEWithHmacSHA1"/>
+            <value string="PBEWithHmacSHA256"/>
+            <value string="PBEWithHmacSHA384"/>
+            <value string="PBEWithHmacSHA512"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r1-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="init">
+        <argument index="1" name="key">
+            <value reference="r-javax-secretkeyfactory" />
+            <value reference="r-javax-keyGenerator" />
+            <value reference="r-javax-secretKeySpec" />
+        </argument>
+    </rule>
+    <rule method="update">
+        <argument index="1" name="getBytes">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="len">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>
+    <rule method="doFinal">
+        <argument index="1" name="getBytes">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="length">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>
+</rules>

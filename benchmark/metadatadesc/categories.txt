@@ -1,0 +1,15 @@
+categories and keywords:
+
+entertainment and games: game TV music
+health: medtronic
+gis: globe map
+finance: paypal 'credit card'
+
+dev tools:  'unit test' architecture framework toolkit rxjava 'application dev' 'app dev' aop
+wrapper: wrapper
+demo: demo demonstrat sample example 'simple app' tutorial
+library: library lib
+security: two-factor password encrypt
+utilities: 'your users' tool
+
+

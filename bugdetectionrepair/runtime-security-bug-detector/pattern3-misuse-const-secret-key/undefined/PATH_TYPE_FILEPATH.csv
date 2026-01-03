@@ -1,0 +1,7 @@
+secretKeySpec.CryptoKeys,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\CryptoKeys.java
+secretKeySpec.RSAKeyPair,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\CryptoKeys.java
+secretKeySpec.CryptUtils,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\CryptUtils.java
+secretKeySpec.Rot13Encryption,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\CryptUtils.java
+secretKeySpec.EncryptionUtils,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\EncryptionUtils.java
+secretKeySpec.Util,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\Util.java
+secretKeySpec.PublicKeyCryptoServer,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\undefined\src\secretKeySpec\PublicKeyCryptoServer.java

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-cipher" class="javax.crypto.Cipher">
+    <rule method="getInstance">
+        <argument index="1" name="transformation">
+            <value string="AES/CBC/PKCS5Padding"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="init">
+        <argument index="1" name="optmode">
+            <value string="ENCRYPT_MODE"/>
+            <value string="DECRYPT_MODE"/>
+            <value string="WRAP_MODE"/>
+            <value string="UNWRAP_MODE"/>
+        </argument>
+        <argument index="2" name="key" searchType="equals">
+            <value reference="r-javax-KeyGenerator" />
+            <value reference="r-javax-SecretKeySpec" />
+        </argument>
+        <argument index="3" name="IV" searchType="equals">
+            <value reference="r-javax-IvParameterSpec" />
+        </argument>
+    </rule>
+    <rule method="doFinal">
+        <argument index="1" name="getBytes">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="length">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>
+</rules>

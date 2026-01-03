@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-cipher" class="javax.crypto.Cipher">
+    <rule method="getInstance">
+        <argument index="1" name="transformation" searchType="contains">
+            <value string="AES" security="weak" type="block_cipher"/>
+            <value string="DES" security="weak" type="block_cipher"/>
+            <value string="DESede" security="weak" type="block_cipher"/>
+            <value string="Blowfish" security="weak" type="block_cipher"/>
+            <value string="RC2" security="weak" type="block_cipher"/>
+            <value string="AES/ECB/NoPadding" security="weak" type="block_cipher"/>
+            <value string="AES/ECB/PKCS5Padding" security="weak" type="block_cipher"/>
+            <value string="AES/CTR/NoPadding" security="weak" type="block_cipher"/>
+            <value string="AES/CTR/PKCS5Padding" security="weak" type="block_cipher"/>
+            <value string="AESWrap" security="strong"/>
+            <value string="\bAES/CBC.*\b" security="strong"/>
+            <value string="\bAES/EAX.*\b" security="strong"/>
+            <value string="\bAES/GCM.*\b" security="strong"/>
+            <value string="\bAES/OCB.*\b" security="strong"/>
+            <value string="\bPBE.*\b" security="strong"/>
+            <value string="AES/CBC/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/CBC/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="AES/CBC/PKCS7Padding" security="strong" type="block_cipher"/>
+            <value string="AES/CFB/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/CFB/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="AES/CTS/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/CTS/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="AES/CTS/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/CTS/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="AES/PCBC/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/PCBC/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="AES/OFB/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/OFB/PKCS5Padding" security="strong" type="block_cipher"/>
+            <value string="PBEWithMD5AndDES" security="strong" type="block_cipher"/>
+            <value string="AES/CFB128/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/CFB8/NoPadding" security="strong" type="block_cipher"/>
+            <value string="AES/GCM/NoPadding" security="strong" type="block_cipher"/>
+            <value string="RSA" security="strong" />
+            <value string="RSA/ECB/PKCS1Padding" security="strong" />
+            <value string="RSA/ECB/OAEPWithSHA-256AndMGF1Padding" security="strong" />
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="init">
+        <argument index="1" name="optmode">
+            <value string="ENCRYPT_MODE"/>
+            <value string="DECRYPT_MODE"/>
+            <value string="WRAP_MODE"/>
+            <value string="UNWRAP_MODE"/>
+        </argument>
+        <argument index="2" name="key">
+            <value reference="r-javax-KeyGenerator" />
+            <value reference="r-javax-SecretKeySpec" />
+        </argument>
+        <argument index="3" name="IV">
+            <value reference="r-javax-IvParameterSpec" />
+        </argument>
+    </rule>
+    <rule method="doFinal">
+        <argument index="1" name="getBytes">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="length">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>
+</rules>

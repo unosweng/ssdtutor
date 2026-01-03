@@ -1,0 +1,6 @@
+repairExamples.Pattern1_ElectronicCodeBook,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern1_ElectronicCodeBook.java
+repairExamples.Pattern2_WeakHash,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern2_WeakHash.java
+repairExamples.Pattern3_ConstantSecretKey,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern3_ConstantSecretKey.java
+repairExamples.Pattern4_PBEConstantSalt,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern4_PBEConstantSalt.java
+repairExamples.Pattern5_PBEConstantInteration,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern5_PBEConstantInteration.java
+repairExamples.Pattern6_SecureRandomConstantSeed,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\repairExamples\src\repairExamples\Pattern6_SecureRandomConstantSeed.java

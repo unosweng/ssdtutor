@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-IvParameterSpec" class="java.crypto.spec.IvParameterSpec">
+    <rule method="IvParameterSpec">
+        <argument index="1" name="getBytes" searchType="equals">
+            <value reference="r-javax-secureRandom"/>
+        </argument>
+    </rule>
+</rules>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-secretkeyfactory" class="javax.crypto.SecretKeyFactory" message="Secret Key Factory">
+    <rule method="getInstance">
+        <argument index="1" name="transformation" searchType="contains">
+            <value string="DiffieHellman"/>
+            <value string="DSA"/>
+            <value string="RSA"/>
+            <value string="EC"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="generatePrivate">
+        <argument index="1" name="keySpec">
+            <value keySpec="(.*?)"/>
+        </argument>	
+    </rule>
+    <rule method="generatePublic">
+        <argument index="1" name="keySpec">
+            <value key="(.*?)"/>
+        </argument>
+    </rule>
+</rules>

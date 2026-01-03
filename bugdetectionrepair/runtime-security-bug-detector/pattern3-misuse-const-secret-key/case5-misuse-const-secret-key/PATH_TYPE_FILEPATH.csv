@@ -1,0 +1,12 @@
+constsecretkey.ReturnedVariableByStaticCall,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\ReturnedVariableByStaticCall.java
+constsecretkey.SecretKey,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\ReturnedVariableByStaticCall.java
+constsecretkey.Message,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\ReturnedVariableByStaticCall.java
+constsecretkey.C,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\C.java
+constsecretkey.A,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\A.java
+constsecretkey.B,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\constsecretkey\B.java
+stream.ActionReadBytes,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\ActionReadBytes.java
+stream.LEDataInputStream,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\LEDataInputStream.java
+stream.LEDataOutputStream,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\LEDataOutputStream.java
+stream.HmacBlockInputStream,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\HmacBlockInputStream.java
+stream.HmacBlockStream,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\HmacBlockStream.java
+stream.NullOutputStream,C:\data\git-uno\firebug\bugdetectionexample\runtime-security-bug-detector\pattern3-misuse-const-secret-key\case5-misuse-const-secret-key\src\stream\NullOutputStream.java

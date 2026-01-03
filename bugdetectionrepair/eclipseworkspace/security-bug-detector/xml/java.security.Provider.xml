@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-provider" class="java.security.Provider">
+	<rule method="getProvider">
+		<argument index="1" name="name">
+			<value string="*"/>
+		</argument>
+		<argument index="2" name="versionStr">
+			<value string="*" />
+			<value double="*" />
+		</argument>
+		<argument index="3" name="info">
+			<value string="*" />
+		</argument>
+		<argument index="4" name="className">
+			<value string="*" />
+		</argument>
+	</rule>
+</rules>

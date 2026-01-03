@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-java-signature" class="java.security.signature">
+    <rule method="getInstance">
+        <argument index="1" name="transformation" searchType="contains">
+            <value string="NONEwithRSA"/>
+            <value string="NONEwithDSA"/>
+            <value string="NONEwithECDSA"/>
+            <value string="MD2withRSA"/>
+            <value string="MD5withRSA"/>
+            <value string="SHA1withRSA"/>
+            <value string="SHA256withRSA"/>
+            <value string="SHA384withRSA"/>
+            <value string="SHA512withRSA"/>
+            <value string="SHA1withDSA"/>
+            <value string="SHA1withECDSA"/>
+            <value string="SHA256withECDSA"/>
+            <value string="SHA384withECDSA"/>
+            <value string="SHA512withECDSA"/>
+        </argument>
+        <argument index="2" name="provider">
+            <value string="(.*?)" />
+            <value reference="r-javax-provider" />
+        </argument>	
+    </rule>
+    <rule method="initSign">
+        <argument index="1" name="privateKey">
+            <value key="(.*?)"/>
+        </argument>	
+        <argument index="2" name="secureRandom">
+            <value reference="r-java-secureRandom"/>
+        </argument>	
+    </rule>         
+    <rule method="initVerify">
+        <argument index="1" name="certificate">
+            <value reference="r-java-certificate"/>
+        </argument>	
+        <argument index="2" name="publicKey">
+            <value reference="r-java-secureRandom"/>
+        </argument>	
+    </rule>
+    <rule method="update">
+        <argument index="1" name="getBytes">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="len">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>
+    <rule method="verify">
+        <argument index="1" name="signature">
+            <value string="(.*?)" />
+        </argument>
+        <argument index="2" name="offset">
+            <value int=".*\d.*" />
+        </argument>
+        <argument index="3" name="len">
+            <value int=".*\d.*" />
+        </argument>
+    </rule>                                                                                                                                                                                                                                                                                                                                                                                                                 
+</rules>

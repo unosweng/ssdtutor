@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-java-secureRandom" class="java.security.SecureRandom">
+    <rule method="setSeed">
+        <argument index="1" name="setSeed" searchType="equals">
+            <value reference="r-javax-secureRandom"/>
+        </argument>
+    </rule>
+    <rule method="nextBytes">
+        <argument index="1" name="nextBytes">
+            <value reference="r-javax-secureRandom"/>
+        </argument>
+    </rule>
+</rules>

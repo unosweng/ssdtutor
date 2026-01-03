@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_aPJRkOT9EeiAkqsLmlywIQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_b9qB0OT9EeiAkqsLmlywIQ" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_e1z6sOT9EeiAkqsLmlywIQ" elementId="bugdetectionexample.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_mHupIOT9EeiAkqsLmlywIQ" elementId="bugdetectionexample.menu.firebugs" label="Fire&amp;Bugs" tooltip="" mnemonics="">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_dFHCwM2UEemriqCNRg_H2Q" elementId="security-bug-detector.handledmenuitem.clearview" label="&amp;Clear Views" command="_8qoFUOVgEei0Pdnm6Bqynw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_QP1osFI-Eemh-Jf4oo0DDQ" elementId="security-bug-detector.handledmenuitem.generatefilepathoftypepreprocess1" label="&amp;Generate File Path of Type (Preprocess 1)" iconURI="" command="_jzP98FI-Eemh-Jf4oo0DDQ"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="__hSLQFI-Eemh-Jf4oo0DDQ" elementId="security-bug-detector.menuseparator.0"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_dAxmcI5IEemNRIRyHYXDrA" elementId="bugdetectionexample.handledmenuitem.findallmisuse" label="&amp;Run All Misuse" iconURI="" command="_IvjI8I5IEemNRIRyHYXDrA"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_-YWgUJKUEemRm9TVFGQuBQ" elementId="security-bug-detector.menuseparator.1"/>
+        <children xsi:type="menu:Menu" xmi:id="_3HaeYCCVEeyRhOs0NSyonQ" elementId="security-bug-detector.menu.weakencryptionalgorithm" label="&amp;1 - Weak Encryption Algorithm">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="__paUoCCVEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.1-findmisuseofelectroniccodebookecb" label="&amp;1.1 - Find Misuse of Electronic Code Book (ECB)" command="_Bn7OwOT-EeiAkqsLmlywIQ"/>
+        </children>
+        <children xsi:type="menu:Menu" xmi:id="_r9UIACCWEeyRhOs0NSyonQ" elementId="security-bug-detector.menu.2-weakhashfunction" label="&amp;2 - Weak Hash Function">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_eHYdgCCXEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.21-findmisuseofhashfunction" label="&amp;2.1 - Find Misuse of Hash Function" command="_lB6wsOloEeiLWZTIPmPU5A"/>
+        </children>
+        <children xsi:type="menu:Menu" xmi:id="_vjx4YCCWEeyRhOs0NSyonQ" elementId="security-bug-detector.menu.3-weakencryptionalgorithmparameter" label="&amp;3 - Weak Encryption Algorithm Parameter">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_1RL1MCCYEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.31-findmisuseofconstsecretkey" label="&amp;3.1 - Find Misuse of Const Secret Key" command="_q-26wOkcEeiEQooN26_Iow"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_7O0RQCCYEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.32-findmisuseofkeygenerator" label="&amp;3.2 - Find Misuse of Key Generator" command="_a6TJ8MHCEeu8wfj8CBhjBg"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_9hrrwCCYEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.33-findmisuseofsecretkeyfactory" label="&amp;3.3 - Find Misuse of SecretKeyFactory" command="_NnIV4NI4EeuADJiHfNTVCA"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_YgKrcCCZEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.34-findmisuseofinitializationvector" label="&amp;3.4 - Find Misuse of Initialization Vector" command="_Gu3NACCZEeyRhOs0NSyonQ"/>
+        </children>
+        <children xsi:type="menu:Menu" xmi:id="_0iTA0CCWEeyRhOs0NSyonQ" elementId="security-bug-detector.menu.4-weakpassword-basedencryption" label="&amp;4 - Weak Password-based Encryption">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_n22XACCYEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.41-findmisuseofpbeparamspec" label="&amp;4.1 - Find Misuse of PBE Param Spec" command="_Z9cLUNDCEemRCuXfHR1DSA"/>
+        </children>
+        <children xsi:type="menu:Menu" xmi:id="_5mc3MCCWEeyRhOs0NSyonQ" elementId="security-bug-detector.menu.weakrandomnumbergenerator" label="&amp;5 -  Weak Random Number Generator">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_rwAZ4CCYEeyRhOs0NSyonQ" elementId="security-bug-detector.handledmenuitem.51-findmisuseofsecurerandom" label="&amp;5.1 - Find Misuse of SecureRandom" command="_dslfwNfXEemoko6VLqHt0g"/>
+        </children>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_--hjkOT9EeiAkqsLmlywIQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_8qoFUOVgEei0Pdnm6Bqynw" elementId="bugdetectionexample.command.clearview" commandName="Clear View"/>
+    <elements xsi:type="commands:Command" xmi:id="_jzP98FI-Eemh-Jf4oo0DDQ" elementId="security-bug-detector.command.generatefilepathoftypepreprocess1" commandName="Generate File Path of Type (Preprocess 1)"/>
+    <elements xsi:type="commands:Command" xmi:id="_IvjI8I5IEemNRIRyHYXDrA" elementId="bugdetectionexample.command.runallmisuse" commandName="Run All Misuse"/>
+    <elements xsi:type="commands:Command" xmi:id="_Bn7OwOT-EeiAkqsLmlywIQ" elementId="bugdetectionexample.command.findmisuseofelectroniccodebookecb" commandName="Find Misuse of Electronic Code Book (ECB)"/>
+    <elements xsi:type="commands:Command" xmi:id="_q-26wOkcEeiEQooN26_Iow" elementId="bugdetectionexample.command.findmisuseofconstsecretkey" commandName="Find Misuse of Const Secret Key"/>
+    <elements xsi:type="commands:Command" xmi:id="_lB6wsOloEeiLWZTIPmPU5A" elementId="bugdetectionexample.command.findmisuseofhashfunction" commandName="Find Misuse of Hash Function"/>
+    <elements xsi:type="commands:Command" xmi:id="_Z9cLUNDCEemRCuXfHR1DSA" elementId="bugdetectionexample.handledmenuitem.findmisuseofpbe" commandName="Find Misuse of PBE Param Spec"/>
+    <elements xsi:type="commands:Command" xmi:id="_dslfwNfXEemoko6VLqHt0g" elementId="bugdetectionexample.handledmenuitem.findmisuseofsecurerandom" commandName="Find Misuse of Secure Random"/>
+    <elements xsi:type="commands:Command" xmi:id="_a6TJ8MHCEeu8wfj8CBhjBg" elementId="security-bug-detector.command.findmisuseofkeygenerator" commandName="Find Misuse of Key Generator"/>
+    <elements xsi:type="commands:Command" xmi:id="_NnIV4NI4EeuADJiHfNTVCA" elementId="security-bug-detector.command.findmisuseofsecretkeyfactory" commandName="Find Misuse of SecretKeyFactory"/>
+    <elements xsi:type="commands:Command" xmi:id="_Gu3NACCZEeyRhOs0NSyonQ" elementId="security-bug-detector.command.findmisuseofinitializationvector" commandName="Find Misuse of Initialization Vector"/>
+    <elements xsi:type="commands:Command" xmi:id="_xkTSkD3KEey0-u5MH1zxaA" elementId="security-bug-detector.command.filelevelchangedistiller" commandName="FileLevelChangeDistiller"/>
+    <elements xsi:type="commands:Command" xmi:id="_0U-qcD3KEey0-u5MH1zxaA" elementId="security-bug-detector.command.methodlevelchangedistiller" commandName="MethodLevelChangeDistiller"/>
+    <elements xsi:type="commands:Command" xmi:id="_hopm4D96EeyrIM1sH03HIQ" elementId="security-bug-detector.command.diff2html-side" commandName="Diff2Html - Side"/>
+    <elements xsi:type="commands:Command" xmi:id="_jhW08D96EeyrIM1sH03HIQ" elementId="security-bug-detector.command.diff2html-line" commandName="Diff2Html - Line"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_FUEJUOT-EeiAkqsLmlywIQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_-Q3qYOVgEei0Pdnm6Bqynw" elementId="bugdetectionexample.handler.clearview" contributionURI="bundleclass://security-bug-detector/handlers.ClearViewHandler" command="_8qoFUOVgEei0Pdnm6Bqynw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_nPgCYFI-Eemh-Jf4oo0DDQ" elementId="security-bug-detector.handler.generateprocessor" contributionURI="bundleclass://security-bug-detector/handlers.GenerateFilePathOfTypeHandler" command="_jzP98FI-Eemh-Jf4oo0DDQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_PSPZ4I5IEemNRIRyHYXDrA" elementId="bugdetectionexample.handler.runall" contributionURI="bundleclass://security-bug-detector/handlers.RunAllFindMisuseHandlers" command="_IvjI8I5IEemNRIRyHYXDrA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_HnYPwOT-EeiAkqsLmlywIQ" elementId="bugdetectionexample.handler.ecb" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseECBHandler" command="_Bn7OwOT-EeiAkqsLmlywIQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_xRCDcOkcEeiEQooN26_Iow" elementId="bugdetectionexample.handler.sks" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseConstSecretKeyHandler" command="_q-26wOkcEeiEQooN26_Iow"/>
+    <elements xsi:type="commands:Handler" xmi:id="_nu9lwOloEeiLWZTIPmPU5A" elementId="bugdetectionexample.handler.hash" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseHashFunctionHandler" command="_lB6wsOloEeiLWZTIPmPU5A"/>
+    <elements xsi:type="commands:Handler" xmi:id="_f37MwNDCEemRCuXfHR1DSA" elementId="bugdetectionexample.handler.pbe" contributionURI="bundleclass://security-bug-detector/handlers.FindMisusePBEHandler" command="_Z9cLUNDCEemRCuXfHR1DSA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_jkjYsNfXEemoko6VLqHt0g" elementId="bugdetectionexample.handler.securerandom" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseSecureRandom" command="_dslfwNfXEemoko6VLqHt0g"/>
+    <elements xsi:type="commands:Handler" xmi:id="_v1LocMHCEeu8wfj8CBhjBg" elementId="security-bug-detector.handler.keygenerator" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseKeyGeneratorHandler" command="_a6TJ8MHCEeu8wfj8CBhjBg"/>
+    <elements xsi:type="commands:Handler" xmi:id="_TFjtcNI4EeuADJiHfNTVCA" elementId="security-bug-detector.handler.0" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseSecretKeyFactoryHandler" command="_NnIV4NI4EeuADJiHfNTVCA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_PqfEMCCZEeyRhOs0NSyonQ" elementId="security-bug-detector.handler.1" contributionURI="bundleclass://security-bug-detector/handlers.FindMisuseInitializationVectorHandler" command="_Gu3NACCZEeyRhOs0NSyonQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_2goCoD3KEey0-u5MH1zxaA" elementId="security-bug-detector.handler.2" contributionURI="bundleclass://security-bug-detector/handlers.FileLevelChangeDistillerHandler" command="_xkTSkD3KEey0-u5MH1zxaA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_ACmvMD3LEey0-u5MH1zxaA" elementId="security-bug-detector.handler.3" contributionURI="bundleclass://security-bug-detector/handlers.MethodLevelChangeDistillerHandler" command="_0U-qcD3KEey0-u5MH1zxaA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_menQQD96EeyrIM1sH03HIQ" elementId="security-bug-detector.handler.4" contributionURI="bundleclass://security-bug-detector/handlers.Diff2htmlSideHandler" command="_hopm4D96EeyrIM1sH03HIQ"/>
+    <elements xsi:type="commands:Handler" xmi:id="_s28EQD96EeyrIM1sH03HIQ" elementId="security-bug-detector.handler.5" contributionURI="bundleclass://security-bug-detector/handlers.Diff2HtmlLineHandler" command="_jhW08D96EeyrIM1sH03HIQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_PiNEwOVgEei0Pdnm6Bqynw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_SWPSoOVgEei0Pdnm6Bqynw" elementId="bugdetectionexample.partdescriptor.cryptomisusedetection" label="Crypto Misuse Detection" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" closeable="true" contributionURI="bundleclass://security-bug-detector/view.CryptoMisuseDetection">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_4BAO0OVgEei0Pdnm6Bqynw" elementId="bugdetectionexample.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_DW8zYOVhEei0Pdnm6Bqynw" elementId="bugdetectionexample.handledmenuitem.clearview" label="Clear View" command="_8qoFUOVgEei0Pdnm6Bqynw"/>
+      </menus>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_PDaDILi8EeuhRslBJ1kpjg" elementId="security-bug-detector.partdescriptor.cryptomisusedetectiontree" label="Crypto Misuse Detection Tree" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" contributionURI="bundleclass://security-bug-detector/view.CryptoMisuseDetectionTree">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_mzalkLjFEeuhRslBJ1kpjg" elementId="security-bug-detector.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_oiuAALjFEeuhRslBJ1kpjg" elementId="security-bug-detector.handledmenuitem.clearview" label="Clear View" command="_8qoFUOVgEei0Pdnm6Bqynw"/>
+      </menus>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_8WQpEMVUEeutoLQjAcVFvg" elementId="security-bug-detector.partdescriptor.intelligenttutorsystemforprogramming" label="Intelligent Tutoring System for Programming Ver1" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" closeable="true" contributionURI="bundleclass://security-bug-detector/view.IntelliTutorSystemViewerV1"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_3T68UMVvEeuM1ewM5QS6HA" elementId="security-bug-detector.partdescriptor.intelligenttutorsystemforprogrammingV2" label="Intelligent Tutoring System for Programming" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" closeable="true" contributionURI="bundleclass://security-bug-detector/view.IntelliTutorSystemViewerV2"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_BMxMkMV3EeuM1ewM5QS6HA" elementId="security-bug-detector.partdescriptor.sampleviewer2" label="Sample Viewer2" closeable="true" contributionURI="bundleclass://security-bug-detector/view.SampleViewer2"/>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_HWWfED3KEey0-u5MH1zxaA" elementId="security-bug-detector.partdescriptor.changedistiller" label="Change Distiller" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" contributionURI="bundleclass://security-bug-detector/view.ChangeDistiller">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_jIfwUD3KEey0-u5MH1zxaA" elementId="security-bug-detector.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:Menu" xmi:id="_sKD3cD3KEey0-u5MH1zxaA" elementId="security-bug-detector.menu.runchangedistiller" label="Run Change Distiller ">
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_vNdXAD3KEey0-u5MH1zxaA" elementId="security-bug-detector.handledmenuitem.filelevel" label="File Level" command="_xkTSkD3KEey0-u5MH1zxaA"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_IF1l0D3LEey0-u5MH1zxaA" elementId="security-bug-detector.handledmenuitem.methodlevel" label="Method Level" command="_0U-qcD3KEey0-u5MH1zxaA"/>
+        </children>
+      </menus>
+    </elements>
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_HDwoYD95EeyrIM1sH03HIQ" elementId="security-bug-detector.partdescriptor.diff2html" label="Diff2html" iconURI="platform:/plugin/security-bug-detector/icons/sample.png" contributionURI="bundleclass://security-bug-detector/view.Diff2htmlViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_nsVyMD97EeyrIM1sH03HIQ" elementId="security-bug-detector.popupmenu.diff2htmlmenu" label="Diff2html Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_oN2j0D97EeyrIM1sH03HIQ" elementId="security-bug-detector.handledmenuitem.diff2html-side" label="Diff2Html - Side" command="_hopm4D96EeyrIM1sH03HIQ"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_rHV5cD97EeyrIM1sH03HIQ" elementId="security-bug-detector.handledmenuitem.diff2html-side" label="Diff2Html - Line" command="_jhW08D96EeyrIM1sH03HIQ"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

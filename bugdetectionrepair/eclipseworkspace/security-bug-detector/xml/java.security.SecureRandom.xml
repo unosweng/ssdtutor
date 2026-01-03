@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules id="r-javax-secureRandom" class="java.security.SecureRandom">
+    <rule method="getInstance">
+        <argument index="1" name="algorithm">
+            <value string="SHA1PRNG" security="strong"/>
+        </argument>
+        <argument index="2" name="provider" optional="True">
+            <value string="*" />
+            <value reference="r1-javax-provider" />
+        </argument>
+    </rule>
+    <rule method="secureRandom">
+    </rule>
+    <rule method="getInstanceStrong">
+    </rule>
+    <rule method="setSeed">
+        <argument index="1" name="setSeed">
+            <value long="*" security="prohibited"/>
+            <value byte="*" security="prohibited"/>
+            <value byte="randomByte" security="strong" />
+            <value long="randomNumber" security="strong" />
+        </argument>
+    </rule>
+    <rule method="nextBytes">
+        <argument index="1" name="nextBytes">
+            <value byte="*"/>
+        </argument>
+    </rule>
+</rules>

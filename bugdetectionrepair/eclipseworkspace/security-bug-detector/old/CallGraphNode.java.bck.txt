@@ -1,0 +1,59 @@
+/**
+ */
+package visitor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.jdt.core.IMethod;
+
+/**
+ * @since JDK1.8
+ */
+public class CallGraphNode {
+   ////////////////
+   IMethod node;
+   List<CallGraphNode> listCallerNode = new ArrayList<CallGraphNode>();
+   ////////////////
+
+   int id;
+   List<IMethod> listIMethodCallers = new ArrayList<IMethod>();
+
+   public CallGraphNode(IMethod node) {
+      this.node = node;
+   }
+
+   public void addAdjNode(CallGraphNode jCallGraphNode) {
+      listCallerNode.add(jCallGraphNode);
+   }
+
+   public CallGraphNode(IMethod node, List<CallGraphNode> childNode) {
+      this.node = node;
+      this.listCallerNode.addAll(childNode);
+   }
+
+   public CallGraphNode(int id, IMethod node, List<IMethod> childNode) {
+      this.id = id;
+      this.node = node;
+      this.listIMethodCallers.addAll(childNode);
+   }
+
+   public int getId() {
+      return id;
+   }
+
+   public IMethod getNode() {
+      return node;
+   }
+
+   public List<CallGraphNode> getCallerNode() {
+      return listCallerNode;
+   }
+
+   public List<IMethod> getIMethodCaller() {
+      for (CallGraphNode callGraphNode : listCallerNode) {
+         listIMethodCallers.add(callGraphNode.getNode());
+      }
+      return listIMethodCallers;
+   }
+}

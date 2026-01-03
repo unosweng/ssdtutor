@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_D9kk8EXwEe2YhcKfJTceiw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_UNXicEXyEe2YhcKfJTceiw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_jgl04EXyEe2YhcKfJTceiw" elementId="projectcfg.command.updatecfg" commandName="Update CFG"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_nGF78EXyEe2YhcKfJTceiw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_-R4tIEXyEe2YhcKfJTceiw" elementId="projectcfg.handler.0" contributionURI="bundleclass://projectCFG/handlers.CFGHandler" command="_jgl04EXyEe2YhcKfJTceiw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_deajYEpNEe2ry42_WOiW6Q" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_1dOs8EpNEe2ry42_WOiW6Q" elementId="projectcfg.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_GL0UsEpPEe2ry42_WOiW6Q" elementId="projectcfg.menu.cfgmenu" label="CFGMenu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Hzv70EpPEe2ry42_WOiW6Q" elementId="projectcfg.handledmenuitem.cfggraph" label="CFG Graph" command="_jgl04EXyEe2YhcKfJTceiw"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
